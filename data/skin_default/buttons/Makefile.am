@@ -5,4 +5,4 @@ dist_install_DATA = \
 	green.png \
 	grey.png \
 	red.png \
-	yelow.png 
+	yellow.png 
