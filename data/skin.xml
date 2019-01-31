@@ -57,18 +57,18 @@
 		<color name="WindowTitleForeground" color="#ffffff" />
 		<color name="WindowTitleBackground" color="#30000000" />
 		<borderset name="bsWindow">
-			<pixmap pos="bpTopLeft" filename="AcjTeam-HD/bs_tl.png" />
-			<pixmap pos="bpTop" filename="AcjTeam-HD/bs_t.png" />
-			<pixmap pos="bpTopRight" filename="AcjTeam-HD/bs_tr.png" />
-			<pixmap pos="bpLeft" filename="AcjTeam-HD/bs_l.png" />
-			<pixmap pos="bpRight" filename="AcjTeam-HD/bs_r.png" />
-			<pixmap pos="bpBottomLeft" filename="AcjTeam-HD/bs_bl.png" />
-			<pixmap pos="bpBottom" filename="AcjTeam-HD/bs_b.png" />
-			<pixmap pos="bpBottomRight" filename="AcjTeam-HD/bs_br.png" />
+			<pixmap pos="bpTopLeft" filename="skin_default/bs_tl.png" />
+			<pixmap pos="bpTop" filename="skin_default/bs_t.png" />
+			<pixmap pos="bpTopRight" filename="skin_default/bs_tr.png" />
+			<pixmap pos="bpLeft" filename="skin_default/bs_l.png" />
+			<pixmap pos="bpRight" filename="skin_default/bs_r.png" />
+			<pixmap pos="bpBottomLeft" filename="skin_default/bs_bl.png" />
+			<pixmap pos="bpBottom" filename="skin_default/bs_b.png" />
+			<pixmap pos="bpBottomRight" filename="skin_default/bs_br.png" />
 		</borderset>
 		<borderset name="bsListboxEntry">
-			<pixmap pos="bpTop" filename="AcjTeam-HD/h-white.png" />
-			<pixmap pos="bpBottom" filename="AcjTeam-HD/h-white.png" />
+			<pixmap pos="bpTop" filename="skin_default/h-white.png" />
+			<pixmap pos="bpBottom" filename="skin_default/h-white.png" />
 		</borderset>
 	</windowstyle>
 	<windowstyle type="skinned" id="1">
@@ -106,23 +106,23 @@
 		<widget source="global.CurrentTime" render="Label" position="1013,35" size="110,20" font="Regular;18" halign="right" backgroundColor="transpBlack" foregroundColor="grey" transparent="1">
 			<convert type="ClockToText">Format:%d.%m.%Y</convert>
 		</widget>
-		<ePixmap pixmap="AcjTeam-HD/ico_dolby_off.png" position="810,10" size="57,20" zPosition="1" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="AcjTeam-HD/ico_dolby_on.png" position="810,10" size="57,20" zPosition="2" alphatest="blend">
+		<ePixmap pixmap="skin_default/ico_dolby_off.png" position="810,10" size="57,20" zPosition="1" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="skin_default/ico_dolby_on.png" position="810,10" size="57,20" zPosition="2" alphatest="blend">
 			<convert type="ServiceInfo">IsMultichannel</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="AcjTeam-HD/ico_format_off.png" position="880,9" size="36,20" zPosition="1" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="AcjTeam-HD/ico_format_on.png" position="880,9" size="36,20" zPosition="2" alphatest="blend">
+		<ePixmap pixmap="skin_default/ico_format_off.png" position="880,9" size="36,20" zPosition="1" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="skin_default/ico_format_on.png" position="880,9" size="36,20" zPosition="2" alphatest="blend">
 			<convert type="ServiceInfo">IsWidescreen</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="AcjTeam-HD/ico_txt_off.png" position="930,9" size="33,20" zPosition="1" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="AcjTeam-HD/ico_txt_on.png" position="930,9" size="33,20" zPosition="2" alphatest="blend">
+		<ePixmap pixmap="skin_default/ico_txt_off.png" position="930,9" size="33,20" zPosition="1" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="skin_default/ico_txt_on.png" position="930,9" size="33,20" zPosition="2" alphatest="blend">
 			<convert type="ServiceInfo">HasTelext</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="AcjTeam-HD/ico_crypt_off.png" position="977,9" size="26,20" zPosition="1" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="AcjTeam-HD/ico_crypt_on.png" position="977,9" size="26,20" zPosition="2" alphatest="blend">
+		<ePixmap pixmap="skin_default/ico_crypt_off.png" position="977,9" size="26,20" zPosition="1" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="skin_default/ico_crypt_on.png" position="977,9" size="26,20" zPosition="2" alphatest="blend">
 			<convert type="ServiceInfo">IsCrypted</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
@@ -146,17 +146,17 @@
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<ePixmap position="820,67" size="50,25" zPosition="20" pixmap="AcjTeam-HD/endback.png" />
+		<ePixmap position="820,67" size="50,25" zPosition="20" pixmap="skin_default/endback.png" />
 		<widget source="session.Event_Now" render="Label" position="300,67" size="570,25" zPosition="21" halign="left" font="Regular;22" backgroundColor="background" transparent="1" noWrap="1">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<ePixmap position="820,67" size="50,25" zPosition="22" pixmap="AcjTeam-HD/end.png" alphatest="blend" />
+		<ePixmap position="820,67" size="50,25" zPosition="22" pixmap="skin_default/end.png" alphatest="blend" />
 		<widget source="session.Event_Now" render="Label" position="870,67" size="120,25" halign="right" font="Regular;22" backgroundColor="background" transparent="1">
 			<convert type="EventTime">Remaining</convert>
 			<convert type="RemainingToText">InMinutes</convert>
 		</widget>
-		<ePixmap position="150,97" size="840,15" zPosition="1" pixmap="AcjTeam-HD/slider_back.png" alphatest="blend" />
-		<widget source="session.Event_Now" render="Progress" pixmap="AcjTeam-HD/slider.png" position="150,97" size="840,15" zPosition="2" transparent="1">
+		<ePixmap position="150,97" size="840,15" zPosition="1" pixmap="skin_default/slider_back.png" alphatest="blend" />
+		<widget source="session.Event_Now" render="Progress" pixmap="skin_default/slider.png" position="150,97" size="840,15" zPosition="2" transparent="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>
 		<widget source="session.Event_Next" render="Label" position="140,114" size="65,25" halign="right" font="Regular;22" foregroundColor="grey" backgroundColor="background" transparent="1">
@@ -168,11 +168,11 @@
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<ePixmap position="820,114" size="50,25" zPosition="20" pixmap="AcjTeam-HD/endback.png" />
+		<ePixmap position="820,114" size="50,25" zPosition="20" pixmap="skin_default/endback.png" />
 		<widget source="session.Event_Next" render="Label" position="300,114" size="570,25" zPosition="21" halign="left" font="Regular;22" foregroundColor="grey" backgroundColor="background" transparent="1" noWrap="1">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<ePixmap position="820,114" size="50,25" zPosition="22" pixmap="AcjTeam-HD/end.png" alphatest="blend" />
+		<ePixmap position="820,114" size="50,25" zPosition="22" pixmap="skin_default/end.png" alphatest="blend" />
 		<widget source="session.Event_Next" render="Label" position="870,114" size="120,25" halign="right" font="Regular;22" foregroundColor="grey" backgroundColor="background" transparent="1">
 			<convert type="EventTime">Duration</convert>
 			<convert type="ClockToText">InMinutes</convert>
@@ -271,8 +271,8 @@
 		<eLabel position="0,2" size="2,196" backgroundColor="grey" />
 		<eLabel position="68,2" size="2,196" backgroundColor="grey" />
 		<eLabel text="VOL" position="2,2" size="66,28" font="Regular;20" halign="center" valign="center" foregroundColor="grey" backgroundColor="background" transparent="1" />
-		<ePixmap pixmap="AcjTeam-HD/vol.png" position="13,36" size="3,156" zPosition="1" alphatest="blend" />
-		<widget name="Volume" pixmap="AcjTeam-HD/vol.png" position="18,36" size="43,156" orientation="orBottomToTop" zPosition="1" transparent="1" />
+		<ePixmap pixmap="skin_default/vol.png" position="13,36" size="3,156" zPosition="1" alphatest="blend" />
+		<widget name="Volume" pixmap="skin_default/vol.png" position="18,36" size="43,156" orientation="orBottomToTop" zPosition="1" transparent="1" />
 	</screen>
 	<screen name="Mute" position="78,50" zPosition="10" size="70,32" title="Mute" flags="wfNoBorder">
 		<eLabel position="0,0" size="70,2" backgroundColor="grey" />
@@ -290,9 +290,9 @@
 		<eLabel position="1,1" size="2,552" backgroundColor="grey" zPosition="5" />
 		<eLabel position="300,101" size="2,450" backgroundColor="grey" zPosition="5" />
 		<eLabel position="599,1" size="2,552" backgroundColor="grey" zPosition="5" />
-		<ePixmap position="61,11" size="480,66" pixmap="AcjTeam-HD/menu/db.png" alphatest="blend" />
+		<ePixmap position="61,11" size="480,66" pixmap="skin_default/menu/db.png" alphatest="blend" />
 		<widget source="title" render="Label" position="1,66" size="600,32" font="Regular;25" halign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget source="menu" render="Listbox" enableWrapAround="1" position="3,101" size="298,450" scrollbarMode="showNever" selectionPixmap="AcjTeam-HD/menu/select300_45.png" transparent="1">
+		<widget source="menu" render="Listbox" enableWrapAround="1" position="3,101" size="298,450" scrollbarMode="showNever" selectionPixmap="skin_default/menu/select300_45.png" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (0, 9), size = (299, 30), flags = RT_HALIGN_CENTER, text = 0) ],
 				"fonts": [gFont("Regular", 22)],
@@ -300,43 +300,43 @@
 				}
 			</convert>
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="AcjTeam-HD/icons/sub.png" position="360,250" size="180,110" alphatest="blend">
+		<widget source="menu" render="Pixmap" pixmap="skin_default/icons/sub.png" position="360,250" size="180,110" alphatest="blend">
 			<convert type="MenuEntryCompare">subtitle_selection</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="AcjTeam-HD/icons/dvd.png" position="330,250" size="240,110" alphatest="blend">
+		<widget source="menu" render="Pixmap" pixmap="skin_default/icons/dvd.png" position="330,250" size="240,110" alphatest="blend">
 			<convert type="MenuEntryCompare">dvd_player</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="AcjTeam-HD/icons/google.png" position="350,250" size="200,110" alphatest="blend">
+		<widget source="menu" render="Pixmap" pixmap="skin_default/icons/google.png" position="350,250" size="200,110" alphatest="blend">
 			<convert type="MenuEntryCompare">googlemaps</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="AcjTeam-HD/icons/media.png" position="395,250" size="110,110" alphatest="blend">
+		<widget source="menu" render="Pixmap" pixmap="skin_default/icons/media.png" position="395,250" size="110,110" alphatest="blend">
 			<convert type="MenuEntryCompare">media_player</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="AcjTeam-HD/icons/timer.png" position="395,250" size="110,110" alphatest="blend">
+		<widget source="menu" render="Pixmap" pixmap="skin_default/icons/timer.png" position="395,250" size="110,110" alphatest="blend">
 			<convert type="MenuEntryCompare">timer_edit</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="AcjTeam-HD/icons/scart.png" position="375,250" size="150,110" alphatest="blend">
+		<widget source="menu" render="Pixmap" pixmap="skin_default/icons/scart.png" position="375,250" size="150,110" alphatest="blend">
 			<convert type="MenuEntryCompare">scart_switch</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="AcjTeam-HD/icons/info.png" position="400,250" size="100,110" alphatest="blend">
+		<widget source="menu" render="Pixmap" pixmap="skin_default/icons/info.png" position="400,250" size="100,110" alphatest="blend">
 			<convert type="MenuEntryCompare">info_screen</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="AcjTeam-HD/icons/plugin.png" position="395,250" size="110,110" alphatest="blend">
+		<widget source="menu" render="Pixmap" pixmap="skin_default/icons/plugin.png" position="395,250" size="110,110" alphatest="blend">
 			<convert type="MenuEntryCompare">plugin_selection</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="AcjTeam-HD/icons/setup.png" position="365,250" size="170,110" alphatest="blend">
+		<widget source="menu" render="Pixmap" pixmap="skin_default/icons/setup.png" position="365,250" size="170,110" alphatest="blend">
 			<convert type="MenuEntryCompare">setup_selection</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="AcjTeam-HD/icons/power.png" position="395,250" size="110,110" alphatest="blend">
+		<widget source="menu" render="Pixmap" pixmap="skin_default/icons/power.png" position="395,250" size="110,110" alphatest="blend">
 			<convert type="MenuEntryCompare">standby_restart_list</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
@@ -349,9 +349,9 @@
 		<eLabel position="1,1" size="2,552" backgroundColor="grey" zPosition="5" />
 		<eLabel position="300,101" size="2,450" backgroundColor="grey" zPosition="5" />
 		<eLabel position="599,1" size="2,552" backgroundColor="grey" zPosition="5" />
-		<ePixmap position="61,11" size="480,66" pixmap="AcjTeam-HD/menu/db.png" alphatest="blend" />
+		<ePixmap position="61,11" size="480,66" pixmap="skin_default/menu/db.png" alphatest="blend" />
 		<widget source="title" render="Label" position="1,66" size="600,32" font="Regular;25" halign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget source="menu" render="Listbox" enableWrapAround="1" position="302,101" size="297,450" scrollbarMode="showNever" selectionPixmap="AcjTeam-HD/menu/select300_45.png" transparent="1">
+		<widget source="menu" render="Listbox" enableWrapAround="1" position="302,101" size="297,450" scrollbarMode="showNever" selectionPixmap="skin_default/menu/select300_45.png" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (0, 9), size = (299, 30), flags = RT_HALIGN_CENTER, text = 0) ],
 				"fonts": [gFont("Regular", 22)],
@@ -359,7 +359,7 @@
 				}
 			</convert>
 		</widget>
-		<ePixmap pixmap="AcjTeam-HD/icons/info.png" position="100,250" size="100,110" alphatest="blend"/>
+		<ePixmap pixmap="skin_default/icons/info.png" position="100,250" size="100,110" alphatest="blend"/>
 	</screen>
 	<screen name="menu_setup" position="339,84" size="652,553" title="Main menu" backgroundColor="transparent" flags="wfNoBorder">
 		<eLabel position="1,1" size="650,552" backgroundColor="transpBlack" zPosition="-1"/>
@@ -369,9 +369,9 @@
 		<eLabel position="1,1" size="2,552" backgroundColor="grey" zPosition="5"/>
 		<eLabel position="300,101" size="2,450" backgroundColor="grey" zPosition="5"/>
 		<eLabel position="649,1" size="2,552" backgroundColor="grey" zPosition="5"/>
-		<ePixmap position="61,11" size="480,66" pixmap="AcjTeam-HD/menu/db.png" alphatest="blend"/>
+		<ePixmap position="61,11" size="480,66" pixmap="skin_default/menu/db.png" alphatest="blend"/>
 		<widget source="title" render="Label" position="1,66" size="600,32" font="Regular;25" halign="center" backgroundColor="transpBlack" transparent="1"/>
-		<widget source="menu" render="Listbox" enableWrapAround="1" position="302,101" size="347,450" scrollbarMode="showNever" selectionPixmap="AcjTeam-HD/menu/select430_45.png" transparent="1">
+		<widget source="menu" render="Listbox" enableWrapAround="1" position="302,101" size="347,450" scrollbarMode="showNever" selectionPixmap="skin_default/menu/select430_45.png" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (0, 9), size = (347, 30), flags = RT_HALIGN_CENTER, text = 0) ],
 				"fonts": [gFont("Regular", 22)],
@@ -379,35 +379,35 @@
 				}
 			</convert>
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="AcjTeam-HD/icons/search.png" position="50,250" size="200,110" alphatest="blend">
+		<widget source="menu" render="Pixmap" pixmap="skin_default/icons/search.png" position="50,250" size="200,110" alphatest="blend">
 			<convert type="MenuEntryCompare">service_searching_selection</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="AcjTeam-HD/icons/setup.png" position="65,250" size="170,110" alphatest="blend">
+		<widget source="menu" render="Pixmap" pixmap="skin_default/icons/setup.png" position="65,250" size="170,110" alphatest="blend">
 			<convert type="MenuEntryCompare">system_selection</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="AcjTeam-HD/icons/ci.png" position="65,250" size="170,110" alphatest="blend">
+		<widget source="menu" render="Pixmap" pixmap="skin_default/icons/ci.png" position="65,250" size="170,110" alphatest="blend">
 			<convert type="MenuEntryCompare">ci_setup</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="AcjTeam-HD/icons/ci.png" position="65,250" size="170,110" alphatest="blend">
+		<widget source="menu" render="Pixmap" pixmap="skin_default/icons/ci.png" position="65,250" size="170,110" alphatest="blend">
 			<convert type="MenuEntryCompare">ci_assign</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="AcjTeam-HD/icons/look.png" position="95,250" size="110,110" alphatest="blend">
+		<widget source="menu" render="Pixmap" pixmap="skin_default/icons/look.png" position="95,250" size="110,110" alphatest="blend">
 			<convert type="MenuEntryCompare">parental_setup</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="AcjTeam-HD/icons/default.png" position="85,250" size="130,110" alphatest="blend">
+		<widget source="menu" render="Pixmap" pixmap="skin_default/icons/default.png" position="85,250" size="130,110" alphatest="blend">
 			<convert type="MenuEntryCompare">default_wizard</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="AcjTeam-HD/icons/reset.png" position="65,250" size="170,110" alphatest="blend">
+		<widget source="menu" render="Pixmap" pixmap="skin_default/icons/reset.png" position="65,250" size="170,110" alphatest="blend">
 			<convert type="MenuEntryCompare">factory_reset</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="AcjTeam-HD/icons/swm.png" position="95,250" size="110,110" alphatest="blend">
+		<widget source="menu" render="Pixmap" pixmap="skin_default/icons/swm.png" position="95,250" size="110,110" alphatest="blend">
 			<convert type="MenuEntryCompare">software_manager</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
@@ -420,9 +420,9 @@
 		<eLabel position="1,1" size="2,552" backgroundColor="grey" zPosition="5" />
 		<eLabel position="300,101" size="2,450" backgroundColor="grey" zPosition="5" />
 		<eLabel position="599,1" size="2,552" backgroundColor="grey" zPosition="5" />
-		<ePixmap position="61,11" size="480,66" pixmap="AcjTeam-HD/menu/db.png" alphatest="blend" />
+		<ePixmap position="61,11" size="480,66" pixmap="skin_default/menu/db.png" alphatest="blend" />
 		<widget source="title" render="Label" position="1,66" size="600,32" font="Regular;25" halign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget source="menu" render="Listbox" enableWrapAround="1" position="302,101" size="297,450" scrollbarMode="showNever" selectionPixmap="AcjTeam-HD/menu/select300_45.png" >
+		<widget source="menu" render="Listbox" enableWrapAround="1" position="302,101" size="297,450" scrollbarMode="showNever" selectionPixmap="skin_default/menu/select300_45.png" >
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (0, 9), size = (299, 30), flags = RT_HALIGN_CENTER, text = 0) ],
 				"fonts": [gFont("Regular", 22)],
@@ -430,7 +430,7 @@
 				}
 			</convert>
 		</widget>
-		<ePixmap pixmap="AcjTeam-HD/icons/search.png" position="50,250" size="200,110" alphatest="blend"/>
+		<ePixmap pixmap="skin_default/icons/search.png" position="50,250" size="200,110" alphatest="blend"/>
 	</screen>
 	<screen name="menu_system" position="339,84" size="602,553" title="Main menu" backgroundColor="transparent" flags="wfNoBorder">
 		<eLabel position="1,1" size="600,552" backgroundColor="transpBlack" zPosition="-1"/>
@@ -440,9 +440,9 @@
 		<eLabel position="1,1" size="2,552" backgroundColor="grey" zPosition="5"/>
 		<eLabel position="300,101" size="2,450" backgroundColor="grey" zPosition="5"/>
 		<eLabel position="599,1" size="2,552" backgroundColor="grey" zPosition="5"/>
-		<ePixmap position="61,11" size="480,66" pixmap="AcjTeam-HD/menu/db.png" alphatest="blend"/>
+		<ePixmap position="61,11" size="480,66" pixmap="skin_default/menu/db.png" alphatest="blend"/>
 		<widget source="title" render="Label" position="1,66" size="600,32" font="Regular;25" halign="center" backgroundColor="transpBlack" transparent="1"/>
-		<widget source="menu" render="Listbox" enableWrapAround="1" position="302,101" size="297,450" scrollbarMode="showNever" selectionPixmap="AcjTeam-HD/menu/select300_45.png">
+		<widget source="menu" render="Listbox" enableWrapAround="1" position="302,101" size="297,450" scrollbarMode="showNever" selectionPixmap="skin_default/menu/select300_45.png">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (0, 9), size = (299, 30), flags = RT_HALIGN_CENTER, text = 0) ],
 				"fonts": [gFont("Regular", 22)],
@@ -450,7 +450,7 @@
 				}
 			</convert>
 		</widget>
-		<ePixmap pixmap="AcjTeam-HD/icons/setup.png" position="65,250" size="170,110" alphatest="blend"/>
+		<ePixmap pixmap="skin_default/icons/setup.png" position="65,250" size="170,110" alphatest="blend"/>
 	</screen>
 	<screen name="menu_harddisk" position="339,84" size="602,553" title="Main menu" backgroundColor="transparent" flags="wfNoBorder">
 		<eLabel position="1,1" size="600,552" backgroundColor="transpBlack" zPosition="-1"/>
@@ -460,9 +460,9 @@
 		<eLabel position="1,1" size="2,552" backgroundColor="grey" zPosition="5"/>
 		<eLabel position="300,101" size="2,450" backgroundColor="grey" zPosition="5"/>
 		<eLabel position="599,1" size="2,552" backgroundColor="grey" zPosition="5"/>
-		<ePixmap position="61,11" size="480,66" pixmap="AcjTeam-HD/menu/db.png" alphatest="blend"/>
+		<ePixmap position="61,11" size="480,66" pixmap="skin_default/menu/db.png" alphatest="blend"/>
 		<widget source="title" render="Label" position="1,66" size="600,32" font="Regular;25" halign="center" backgroundColor="transpBlack" transparent="1"/>
-		<widget source="menu" render="Listbox" enableWrapAround="1" position="302,101" size="297,450" scrollbarMode="showNever" selectionPixmap="AcjTeam-HD/menu/select300_45.png">
+		<widget source="menu" render="Listbox" enableWrapAround="1" position="302,101" size="297,450" scrollbarMode="showNever" selectionPixmap="skin_default/menu/select300_45.png">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (0, 9), size = (299, 30), flags = RT_HALIGN_CENTER, text = 0) ],
 				"fonts": [gFont("Regular", 22)],
@@ -470,7 +470,7 @@
 				}
 			</convert>
 		</widget>
-		<ePixmap pixmap="AcjTeam-HD/icons/hdd.png" position="75,250" size="150,110" alphatest="blend"/>
+		<ePixmap pixmap="skin_default/icons/hdd.png" position="75,250" size="150,110" alphatest="blend"/>
 	</screen>
 	<screen name="menu_shutdown" position="339,84" size="602,553" title="Main menu" backgroundColor="transparent" flags="wfNoBorder">
 		<eLabel position="1,1" size="600,552" backgroundColor="transpBlack" zPosition="-1"/>
@@ -480,9 +480,9 @@
 		<eLabel position="1,1" size="2,552" backgroundColor="grey" zPosition="5"/>
 		<eLabel position="300,101" size="2,450" backgroundColor="grey" zPosition="5"/>
 		<eLabel position="599,1" size="2,552" backgroundColor="grey" zPosition="5"/>
-		<ePixmap position="61,11" size="480,66" pixmap="AcjTeam-HD/menu/db.png" alphatest="blend"/>
+		<ePixmap position="61,11" size="480,66" pixmap="skin_default/menu/db.png" alphatest="blend"/>
 		<widget source="title" render="Label" position="1,66" size="600,32" font="Regular;25" halign="center" backgroundColor="transpBlack" transparent="1"/>
-		<widget source="menu" render="Listbox" enableWrapAround="1" position="302,101" size="297,450" scrollbarMode="showNever" selectionPixmap="AcjTeam-HD/menu/select300_45.png">
+		<widget source="menu" render="Listbox" enableWrapAround="1" position="302,101" size="297,450" scrollbarMode="showNever" selectionPixmap="skin_default/menu/select300_45.png">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (0, 9), size = (299, 30), flags = RT_HALIGN_CENTER, text = 0) ],
 				"fonts": [gFont("Regular", 22)],
@@ -490,13 +490,13 @@
 				}
 			</convert>
 		</widget>
-		<ePixmap pixmap="AcjTeam-HD/icons/power.png" position="95,250" size="110,110" alphatest="blend"/>
+		<ePixmap pixmap="skin_default/icons/power.png" position="95,250" size="110,110" alphatest="blend"/>
 	</screen>
 	<screen name="Menu" position="340,134" size="600,502" title="Main menu">
 		<eLabel position="0,0" size="600,2" backgroundColor="grey" zPosition="5" />
 		<widget source="title" render="Label" position="10,10" size="580,35" font="Regular;27" halign="center" />
 		<eLabel position="10,50" size="580,2" backgroundColor="grey" zPosition="5" />
-		<widget source="menu" render="Listbox" enableWrapAround="1" position="10,55" size="580,450" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png">
+		<widget source="menu" render="Listbox" enableWrapAround="1" position="10,55" size="580,450" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png">
 			<convert type="StringList" />
 		</widget>
 	</screen>
@@ -507,7 +507,7 @@
 		<eLabel position="1,551" size="600,2" backgroundColor="grey" zPosition="5" />
 		<eLabel position="1,1" size="2,552" backgroundColor="grey" zPosition="5" />
 		<eLabel position="599,1" size="2,552" backgroundColor="grey" zPosition="5" />
-		<ePixmap position="61,11" size="480,66" pixmap="AcjTeam-HD/menu/db.png" alphatest="blend" />
+		<ePixmap position="61,11" size="480,66" pixmap="skin_default/menu/db.png" alphatest="blend" />
 		<eLabel text="About" position="1,66" size="600,32" font="Regular;25" halign="center" backgroundColor="transpBlack" transparent="1" />
 		<widget source="EnigmaVersion" render="Label" position="11,120" size="580,25" font="Regular;22" halign="center" backgroundColor="transpBlack" transparent="1" />
 		<widget source="ImageVersion" render="Label" position="11,160" size="580,25" font="Regular;22" halign="center" backgroundColor="transpBlack" transparent="1" />
@@ -524,7 +524,7 @@
 		<eLabel position="0,0" size="1100,2" backgroundColor="grey" />
 		<widget source="Adaptertext" render="Label" position="20,20" size="140,25" zPosition="10" font="Regular;22" transparent="1" />
 		<widget source="Adapter" render="Label" position="160,20" size="400,25" zPosition="10" font="Regular;22" transparent="1" />
-		<widget name="config" position="20,70" size="740,375" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" />
+		<widget name="config" position="20,70" size="740,375" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" />
 		<widget source="introduction2" render="Label" position="20,470" size="740,30" zPosition="10" font="Regular;24" halign="center" transparent="1" />
 		<eLabel position="780,0" size="2,518" backgroundColor="grey" />
 		<widget source="introduction" render="Label" position="790,20" size="300,25" font="Regular;22" halign="center" />
@@ -548,7 +548,7 @@
 		<eLabel position="0,0" size="1100,2" backgroundColor="grey" />
 		<widget source="IFtext" render="Label" position="20,20" size="140,25" zPosition="10" font="Regular;22" transparent="1" />
 		<widget source="IF" render="Label" position="160,20" size="400,25" zPosition="10" font="Regular;22" transparent="1" />
-		<widget name="menulist" position="20,70" size="740,375" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" />
+		<widget name="menulist" position="20,70" size="740,375" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" />
 		<eLabel position="780,0" size="2,518" backgroundColor="grey" />
 		<widget source="description" render="Label" position="790,20" size="300,480" font="Regular;22" halign="center" valign="center" />
 		<eLabel position="0,518" size="1100,2" backgroundColor="grey" />
@@ -558,16 +558,16 @@
 	</screen>
 	<screen name="BouquetSelector" position="340,150" size="600,300" title="Choose bouquet">
 		<eLabel position="0,0" size="600,2" backgroundColor="grey" />
-		<widget name="menu" position="20,20" size="560,260" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" />
+		<widget name="menu" position="20,20" size="560,260" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" />
 	</screen>
 	<screen name="ChannelContextMenu" position="340,150" size="600,300" title="Channellist menu">
 		<eLabel position="0,0" size="600,2" backgroundColor="grey" />
-		<widget name="menu" position="20,20" size="560,260" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" />
+		<widget name="menu" position="20,20" size="560,260" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" />
 	</screen>
 	<screen name="ChannelSelection" position="80,100" size="1120,560" title="Channel Selection">
 		<eLabel position="0,0" size="1140,2" backgroundColor="grey" />
 		<eLabel position="800,0" size="2,518" backgroundColor="grey" />
-		<widget name="list" position="10,20" size="780,480" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select780_30.png" foregroundColorServiceNotAvail="#666666" serviceItemHeight="30" serviceNumberFont="Regular;24" serviceNameFont="Regular;24" serviceInfoFont="Regular;22" />
+		<widget name="list" position="10,20" size="780,480" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select780_30.png" foregroundColorServiceNotAvail="#666666" serviceItemHeight="30" serviceNumberFont="Regular;24" serviceNameFont="Regular;24" serviceInfoFont="Regular;22" />
 		<eLabel position="0,518" size="1120,2" backgroundColor="grey" />
 		<widget name="key_red" position="30,525" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="red" />
 		<widget name="key_green" position="300,525" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="green" />
@@ -587,7 +587,7 @@
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Format:- %H:%M</convert>
 		</widget>
-		<widget source="ServiceEvent" render="Progress" position="810,158" zPosition="1" pixmap="AcjTeam-HD/progress.png" size="300,15" borderWidth="1" borderColor="#cccccc">
+		<widget source="ServiceEvent" render="Progress" position="810,158" zPosition="1" pixmap="skin_default/progress.png" size="300,15" borderWidth="1" borderColor="#cccccc">
 			<convert type="EventTime">Progress</convert>
 		</widget>
 		<widget source="ServiceEvent" render="Label" position="810,180" zPosition="1" size="300,300" font="Regular;20" foregroundColor="#dddddd">
@@ -600,7 +600,7 @@
 	</screen>
 	<screen name="ChannelSelectionRadio" position="82,100" size="1116,360" title="Channel Selection">
 		<eLabel position="0,0" size="1116,2" backgroundColor="grey" />
-		<widget name="list" position="18,10" size="1080,300" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_30.png" foregroundColorServiceNotAvail="#666666" serviceItemHeight="30" serviceNumberFont="Regular;24" serviceNameFont="Regular;24" serviceInfoFont="Regular;22" transparent="1" />
+		<widget name="list" position="18,10" size="1080,300" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_30.png" foregroundColorServiceNotAvail="#666666" serviceItemHeight="30" serviceNumberFont="Regular;24" serviceNameFont="Regular;24" serviceInfoFont="Regular;22" transparent="1" />
 		<eLabel position="0,318" size="1116,2" backgroundColor="grey" />
 		<widget name="key_red" position=" 30,325" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="red" />
 		<widget name="key_green" position="300,325" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="green" />
@@ -610,7 +610,7 @@
 	<screen name="ChoiceBox" position="150,100" size="550,400" title="Input">
 		<eLabel position="0,0" size="1100,2" backgroundColor="grey"/>
 		<widget name="text" position="10,10" size="550,25" font="Regular;20"/>
-		<widget name="list" position="0,30" size="550,335" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png"/>
+		<widget name="list" position="0,30" size="550,335" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png"/>
 		<applet type="onLayoutFinish">
 # this should be factored out into some helper code, but currently demonstrates applets.
 from enigma import eSize, ePoint
@@ -651,7 +651,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 	</screen>
 	<screen name="CAidSelect" position="340,134" size="600,502" title="select CAId's">
 		<eLabel position="0,0" size="600,2" backgroundColor="grey" zPosition="5" />
-		<widget name="list" position="0,10" size="600,400" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" />
+		<widget name="list" position="0,10" size="600,400" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" />
 		<widget source="introduction" render="Label" position="10,430" size="580,30" zPosition="10" font="Regular;24" halign="center" transparent="1" />
 		<eLabel position="0,460" size="600,2" backgroundColor="grey" />
 		<widget source="key_red" render="Label" position="40,467" zPosition="2" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="red" backgroundColor="black" transparent="1" />
@@ -665,7 +665,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<eLabel position="10,145" size="1080,2" backgroundColor="grey" />
 		<widget source="ServiceList_desc" render="Label" position="20,155" size="1060,30" zPosition="3" font="Regular;24" />
 		<eLabel position="10,195" size="1080,2" backgroundColor="grey" />
-		<widget name="ServiceList" position="20,205" size="1060,300" zPosition="2" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" transparent="1" />
+		<widget name="ServiceList" position="20,205" size="1060,300" zPosition="2" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" transparent="1" />
 		<widget source="ServiceList_info" render="Label" position="20,205" size="1060,300" zPosition="3" font="Regular;24" transparent="1" />
 		<eLabel position="10,518" size="1080,2" backgroundColor="grey" />
 		<widget source="key_red" render="Label" position="20,525" zPosition="2" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="red" backgroundColor="darkgrey" transparent="1" />
@@ -677,12 +677,12 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<eLabel position="0,0" size="600,2" backgroundColor="grey" zPosition="5" />
 		<widget name="text" position="10,10" size="580,30" font="Regular;25" transparent="1" />
 		<eLabel position="0,45" size="600,2" backgroundColor="grey" zPosition="5" />
-		<widget name="entries" position="10,55" size="580,375" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" />
+		<widget name="entries" position="10,55" size="580,375" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" />
 		<eLabel position="0,480" size="600,2" backgroundColor="grey" />
 	</screen>
 	<screen name="CIselectMainMenu" position="340,134" size="600,502" title="CI Assignment">
 		<eLabel position="0,0" size="600,2" backgroundColor="grey" zPosition="5" />
-		<widget name="CiList" position="0,10" size="600,450" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" />
+		<widget name="CiList" position="0,10" size="600,450" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" />
 		<eLabel position="0,460" size="600,2" backgroundColor="grey" />
 		<widget source="key_red" render="Label" position="40,467" zPosition="2" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="red" backgroundColor="black" transparent="1" />
 		<widget source="key_green" render="Label" position="310,467" zPosition="2" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="green" backgroundColor="black" transparent="1" />
@@ -700,7 +700,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 	</screen>
 	<screen name="myProviderSelection" position="90,100" size="1100,560" title="Select provider to add...">
 		<eLabel position="0,0" size="1140,2" backgroundColor="grey" />
-		<widget name="list" position="10,20" size="1080,450" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" />
+		<widget name="list" position="10,20" size="1080,450" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" />
 		<widget source="introduction" render="Label" position="10,490" size="580,30" zPosition="10" font="Regular;24" halign="center" transparent="1" />
 		<eLabel position="0,518" size="1120,2" backgroundColor="grey" />
 		<widget source="key_red" render="Label" position="30,525" zPosition="2" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="red" backgroundColor="black" transparent="1" />
@@ -710,7 +710,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 	</screen>
 	<screen name="myChannelSelection" position="90,100" size="1100,560" title="Select service to add...">
 		<eLabel position="0,0" size="1140,2" backgroundColor="grey" />
-		<widget name="list" position="10,20" size="1080,450" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" />
+		<widget name="list" position="10,20" size="1080,450" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" />
 		<widget source="introduction" render="Label" position="10,490" size="580,30" zPosition="10" font="Regular;24" halign="center" transparent="1" />
 		<eLabel position="0,518" size="1120,2" backgroundColor="grey" />
 		<widget source="key_red" render="Label" position="30,525" zPosition="2" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="red" backgroundColor="black" transparent="1" />
@@ -731,7 +731,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 	<screen name="CutListEditor" position="0,0" size="1280,720" title="Cutlist editor" flags="wfNoBorder" backgroundColor="#000000">
 		<eLabel position="80,125" size="300,420" zPosition="1" backgroundColor="grey"/>
 		<eLabel position="81,126" size="298,418" zPosition="2" backgroundColor="black"/>
-		<widget source="cutlist" position="90,135" zPosition="3" size="280,400" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" transparent="1" render="Listbox" >
+		<widget source="cutlist" position="90,135" zPosition="3" size="280,400" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" transparent="1" render="Listbox" >
 			<convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos=(10,2), size=(170, 20), text = 1, backcolor = MultiContentTemplateColor(3)),
@@ -750,17 +750,17 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<widget source="session.CurrentService" render="Label" position="450,550" size="790,25" zPosition="3" font="Regular;20" halign="center" valign="center" backgroundColor="black" transparent="1">
 			<convert type="ServicePosition">Position,Detailed</convert>
 		</widget>
-		<ePixmap pixmap="AcjTeam-HD/mp_buttons.png" position="100,582" size="260,32" zPosition="1" alphatest="on" />
+		<ePixmap pixmap="skin_default/mp_buttons.png" position="100,582" size="260,32" zPosition="1" alphatest="on" />
 		<widget name="Timeline" position="479,587" size="696,20" zPosition="3" backgroundColor="#808888" pointer="skin_default/position_arrow.png:3,5" foregroundColor="black" />
 		<eLabel text="OK = Menu" position="1060,630" size="140,22" zPosition="1" font="Regular;20" backgroundColor="black" transparent="1" />
 	</screen>
 	<screen name="DefaultSatLists" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder">
 		<eLabel text="Default Satlists" position="500,63" size="330,30" font="Regular;27" halign="center" backgroundColor="background" transparent="1" />
 		<widget name="wizard" position="450,120" size="110,174" pixmap="skin_default/wizard.png" zPosition="10" transparent="1" alphatest="on" />
-		<ePixmap pixmap="AcjTeam-HD/buttons/red.png" position="450,305" size="21,21" alphatest="on" />
+		<ePixmap pixmap="skin_default/buttons/red.png" position="450,305" size="21,21" alphatest="on" />
 		<widget name="languagetext" position="485,305" size="150,23" font="Regular;21" backgroundColor="background" transparent="1" />
 		<widget name="text" position="640,120" size="500,210" font="Regular;23" backgroundColor="background" transparent="1" />
-		<widget source="list" render="Listbox" position="460,340" size="730,200" zPosition="1" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" transparent="1">
+		<widget source="list" render="Listbox" position="460,340" size="730,200" zPosition="1" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" transparent="1">
 			<convert type="StringList" />
 		</widget>
 		<widget name="config" position="460,340" size="730,200" zPosition="2" scrollbarMode="showOnDemand" transparent="1" />
@@ -769,7 +769,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 	<screen name="DefaultWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder">
 		<eLabel text="DefaultWizard" position="500,63" size="330,30" font="Regular;27" halign="center" backgroundColor="background" transparent="1" />
 		<widget name="wizard" position="450,120" size="110,174" pixmap="skin_default/wizard.png" zPosition="10" transparent="1" alphatest="on" />
-		<ePixmap pixmap="AcjTeam-HD/buttons/red.png" position="450,305" size="21,21" alphatest="on" />
+		<ePixmap pixmap="skin_default/buttons/red.png" position="450,305" size="21,21" alphatest="on" />
 		<widget name="languagetext" position="485,305" size="150,23" font="Regular;21" backgroundColor="background" transparent="1" />
 		<widget name="text" position="640,120" size="500,210" font="Regular;23" backgroundColor="background" transparent="1" />
 		<widget source="list" render="Listbox" position="460,340" size="730,200" zPosition="1" scrollbarMode="showOnDemand" transparent="1">
@@ -781,10 +781,10 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 	<screen name="DreamPackageWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder">
 		<eLabel text="DreamPackageWizard" position="500,63" size="330,30" font="Regular;27" halign="center" backgroundColor="background" transparent="1" />
 		<widget name="wizard" position="450,120" size="110,174" pixmap="skin_default/wizard.png" zPosition="10" transparent="1" alphatest="on" />
-		<ePixmap pixmap="AcjTeam-HD/buttons/red.png" position="450,305" size="21,21" alphatest="on" />
+		<ePixmap pixmap="skin_default/buttons/red.png" position="450,305" size="21,21" alphatest="on" />
 		<widget name="languagetext" position="485,305" size="150,23" font="Regular;21" backgroundColor="background" transparent="1" />
 		<widget name="text" position="640,120" size="500,210" font="Regular;23" backgroundColor="background" transparent="1" />
-		<widget source="list" render="Listbox" position="450,350" size="750,200" zPosition="1" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" transparent="1">
+		<widget source="list" render="Listbox" position="450,350" size="750,200" zPosition="1" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" transparent="1">
 			<convert type="StringList" />
 		</widget>
 		<widget name="config" position="450,350" size="750,200" zPosition="2" scrollbarMode="showOnDemand" transparent="1" />
@@ -792,7 +792,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 	</screen>
 	<screen name="EPGSelection" position="90,90" size="1100,560" zPosition="10" title="EPG Selection">
 		<eLabel position="0,0" size="1100,2" backgroundColor="grey" />
-		<widget name="list" position="10,20" size="780,475" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" transparent="1" />
+		<widget name="list" position="10,20" size="780,475" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" transparent="1" />
 		<eLabel position="0,518" size="1100,2" backgroundColor="grey" />
 		<eLabel position="800,0" size="2,518" backgroundColor="grey" />
 		<widget source="Event" render="Label" position="810,20" size="280,464" font="Regular;20" foregroundColor="white" backgroundColor="black" transparent="1">
@@ -811,14 +811,14 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		</widget>
 	</screen>
 	<screen name="EPGSelectionMulti" position="90,100" size="1100,560" title="EPG Selection Multi">
-		<widget name="now_button_sel" pixmap="AcjTeam-HD/epg_now.png" position="0,0" zPosition="3" size="1100,35" alphatest="on" />
-		<widget name="next_button_sel" pixmap="AcjTeam-HD/epg_next.png" position="0,0" zPosition="3" size="1100,35" alphatest="on" />
-		<widget name="more_button_sel" pixmap="AcjTeam-HD/epg_more.png" position="0,0" zPosition="3" size="1100,35" alphatest="on" />
+		<widget name="now_button_sel" pixmap="skin_default/epg_now.png" position="0,0" zPosition="3" size="1100,35" alphatest="on" />
+		<widget name="next_button_sel" pixmap="skin_default/epg_next.png" position="0,0" zPosition="3" size="1100,35" alphatest="on" />
+		<widget name="more_button_sel" pixmap="skin_default/epg_more.png" position="0,0" zPosition="3" size="1100,35" alphatest="on" />
 		<widget name="now_text" position="32,7" zPosition="4" size="250,25" text="NOW" font="Regular;20" halign="center" backgroundColor="transpBlack" transparent="1" />
 		<widget name="next_text" position="282,7" zPosition="4" size="250,25" text="NEXT" font="Regular;20" halign="center" backgroundColor="transpBlack" transparent="1" />
 		<widget name="more_text" position="532,7" zPosition="4" size="250,25" text="MORE" font="Regular;20" halign="center" backgroundColor="transpBlack" transparent="1" />
 		<widget name="date" position="880,10" size="200,28" font="Regular;24" valign="center" halign="right" backgroundColor="transpBlack" transparent="1" />
-		<widget name="list" position="10,55" size="1080,450" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" />
+		<widget name="list" position="10,55" size="1080,450" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" />
 		<eLabel position="0,518" size="1100,2" backgroundColor="grey" />
 		<widget name="key_red" position=" 20,525" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="red" />
 		<widget name="key_green" position="290,525" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="green" />
@@ -853,13 +853,13 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<eLabel position="0,384" size="760,1" backgroundColor="darkgrey" />
 		<eLabel position="0,438" size="760,1" backgroundColor="darkgrey" />
 		<eLabel position="0,492" size="760,1" backgroundColor="darkgrey" />
-		<widget name="timeline0" position="0,55" zPosition="1" size="1,442" pixmap="AcjTeam-HD/timeline.png" />
-		<widget name="timeline1" position="0,55" zPosition="1" size="1,442" pixmap="AcjTeam-HD/timeline.png" />
-		<widget name="timeline2" position="0,55" zPosition="1" size="1,442" pixmap="AcjTeam-HD/timeline.png" />
-		<widget name="timeline3" position="0,55" zPosition="1" size="1,442" pixmap="AcjTeam-HD/timeline.png" />
-		<widget name="timeline4" position="0,55" zPosition="1" size="1,442" pixmap="AcjTeam-HD/timeline.png" />
-		<widget name="timeline5" position="0,55" zPosition="1" size="1,442" pixmap="AcjTeam-HD/timeline.png" />
-		<widget name="timeline_now" position="0,53" zPosition="2" size="19,446" pixmap="AcjTeam-HD/timeline-now.png" alphatest="on" />
+		<widget name="timeline0" position="0,55" zPosition="1" size="1,442" pixmap="skin_default/timeline.png" />
+		<widget name="timeline1" position="0,55" zPosition="1" size="1,442" pixmap="skin_default/timeline.png" />
+		<widget name="timeline2" position="0,55" zPosition="1" size="1,442" pixmap="skin_default/timeline.png" />
+		<widget name="timeline3" position="0,55" zPosition="1" size="1,442" pixmap="skin_default/timeline.png" />
+		<widget name="timeline4" position="0,55" zPosition="1" size="1,442" pixmap="skin_default/timeline.png" />
+		<widget name="timeline5" position="0,55" zPosition="1" size="1,442" pixmap="skin_default/timeline.png" />
+		<widget name="timeline_now" position="0,53" zPosition="2" size="19,446" pixmap="skin_default/timeline-now.png" alphatest="on" />
 		<widget source="Event" render="Label" position="810,10" zPosition="1" size="300,50" font="Regular;24" halign="center" foregroundColor="white">
 			<convert type="EventName">Name</convert>
 		</widget>
@@ -875,7 +875,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Format:- %H:%M</convert>
 		</widget>
-		<widget source="Event" render="Progress" position="810,158" zPosition="1" pixmap="AcjTeam-HD/progress.png" size="300,15" borderWidth="1" borderColor="#cccccc">
+		<widget source="Event" render="Progress" position="810,158" zPosition="1" pixmap="skin_default/progress.png" size="300,15" borderWidth="1" borderColor="#cccccc">
 			<convert type="EventTime">Progress</convert>
 		</widget>
 		<widget source="Event" render="Label" position="810,180" zPosition="1" size="300,300" font="Regular;20" foregroundColor="#dddddd">
@@ -892,7 +892,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 
 	<screen name="HarddiskDriveSelection" position="90,100" size="1100,560" title="Select HDD">
 		<eLabel position="0,0" size="1100,2" backgroundColor="grey" />
-		<widget source="hddlist" render="Listbox" position="20,20" size="740,375" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select780_75.png" >
+		<widget source="hddlist" render="Listbox" position="20,20" size="740,375" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select780_75.png" >
 			<convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos = (60, 6), size = (500, 28), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0), # index 0 is the hdd_description
@@ -921,7 +921,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<widget source="model" render="Label" position="145,10" size="380,25" font="Regular;23" />
 		<widget source="capacity" render="Label" position="145,40" size="380,25" font="Regular;23" />
 		<widget source="bus" render="Label" position="145,70" size="380,25" font="Regular;23" />
-		<widget name="config" position="20,170" size="740,75" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" />
+		<widget name="config" position="20,170" size="740,75" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" />
 		<widget source="introduction" render="Label" position="20,470" size="740,30" zPosition="10" font="Regular;24" halign="center" transparent="1" />
 		<eLabel position="780,0" size="2,518" backgroundColor="grey" />
 		<eLabel position="0,518" size="1100,2" backgroundColor="grey" />
@@ -940,7 +940,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<eLabel text="help..." position="450,63" size="740,50" font="Regular;40" halign="center" backgroundColor="transpBlack" transparent="1" />
 		<widget name="rc" position="150,105" size="154,500" pixmaps="skin_default/rc0.png,skin_default/rc1.png,skin_default/rc2.png" zPosition="10" alphatest="on" />
 		<widget name="long_key" position="80,585" size="300,30" font="Regular;24" halign="center" foregroundColor="yellow" backgroundColor="transpBlack" transparent="1" />
-		<widget name="list" position="450,140" size="740,494" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select750_38.png" />
+		<widget name="list" position="450,140" size="740,494" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select750_38.png" />
 		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="on" />
 		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="on" />
 		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="on" />
@@ -948,7 +948,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 	</screen>
 	<screen name="LanguageSelection" position="340,134" size="600,502" title="Language selection">
 		<eLabel position="0,0" size="600,2" backgroundColor="grey" zPosition="5"/>
-		<widget source="languages" render="Listbox" position="0,2" size="600,500" scrollbarMode="showNever" selectionPixmap="AcjTeam-HD/menu/select600_50.png">
+		<widget source="languages" render="Listbox" position="0,2" size="600,500" scrollbarMode="showNever" selectionPixmap="skin_default/menu/select600_50.png">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos = (200, 10), size = (470, 30), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the language name,
@@ -970,7 +970,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<widget name="text" position="640,120" size="500,240" font="Regular;23" backgroundColor="background" transparent="1" />
 		<eLabel position="450,120" size="750,440" zPosition="1" backgroundColor="#bbbbbb" />
 		<eLabel position="451,121" size="748,438" zPosition="2" backgroundColor="#252b4247" />
-		<widget source="languages" render="Listbox" position="460,130" size="730,420" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" transparent="1">
+		<widget source="languages" render="Listbox" position="460,130" size="730,420" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 				MultiContentEntryText(pos = (130, 17), size = (500, 60), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the language name,
@@ -988,10 +988,10 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<widget name="text" position="10,10" size="1080,27" font="Regular;23" />
 		<eLabel position="10,50" size="20,27" backgroundColor="darkgrey" />
 		<widget name="target" position="30,50" size="1060,27" valign="center" font="Regular;24" foregroundColor="black" backgroundColor="darkgrey" />
-		<widget name="filelist" position="30,85" size="1060,230" scrollbarMode="showOnDemand" selectionDisabled="1" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" />
+		<widget name="filelist" position="30,85" size="1060,230" scrollbarMode="showOnDemand" selectionDisabled="1" selectionPixmap="skin_default/menu/select1080_25.png" />
 		<eLabel position="10,345" size="20,27" backgroundColor="darkgrey" />
 		<widget name="textbook" position="30,345" size="1060,27" valign="center" font="Regular;24" foregroundColor="black" backgroundColor="darkgrey" />
-		<widget name="booklist" position="30,380" size="1060,125" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" />
+		<widget name="booklist" position="30,380" size="1060,125" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" />
 		<eLabel position="0,518" size="1100,2" backgroundColor="grey" />
 		<widget name="key_red" position="20,525" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="red" />
 		<widget name="key_green" position="290,525" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="green" />
@@ -1004,7 +1004,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<widget name="ErrorPixmap" pixmap="skin_default/icons/input_error.png" position="5,5" size="53,53" alphatest="on"/>
 		<widget name="QuestionPixmap" pixmap="skin_default/icons/input_question.png" position="5,5" size="53,53" alphatest="on"/>
 		<widget name="InfoPixmap" pixmap="skin_default/icons/input_info.png" position="5,5" size="53,53" alphatest="on"/>
-		<widget name="list" position="100,100" size="480,375" selectionPixmap="AcjTeam-HD/menu/select1080_25.png"/>
+		<widget name="list" position="100,100" size="480,375" selectionPixmap="skin_default/menu/select1080_25.png"/>
 		<applet type="onLayoutFinish">
 # this should be factored out into some helper code, but currently demonstrates applets.
 from enigma import eSize, ePoint
@@ -1059,13 +1059,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="session.CurrentService" render="Label" position="15,6" size="800,54" font="Regular;24" backgroundColor="transpBlack" transparent="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<ePixmap pixmap="AcjTeam-HD/ico_dolby_off.png" position="890,10" size="57,20" zPosition="1" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="AcjTeam-HD/ico_dolby_on.png" position="890,10" size="57,20" zPosition="2" alphatest="blend">
+		<ePixmap pixmap="skin_default/ico_dolby_off.png" position="890,10" size="57,20" zPosition="1" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="skin_default/ico_dolby_on.png" position="890,10" size="57,20" zPosition="2" alphatest="blend">
 			<convert type="ServiceInfo">IsMultichannel</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="AcjTeam-HD/ico_format_off.png" position="960,9" size="36,20" zPosition="1" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="AcjTeam-HD/ico_format_on.png" position="960,9" size="36,20" zPosition="2" alphatest="blend">
+		<ePixmap pixmap="skin_default/ico_format_off.png" position="960,9" size="36,20" zPosition="1" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="skin_default/ico_format_on.png" position="960,9" size="36,20" zPosition="2" alphatest="blend">
 			<convert type="ServiceInfo">IsWidescreen</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
@@ -1083,8 +1083,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="session.CurrentService" render="Label" position="10,73" size="100,25" font="Regular;22" halign="right" valign="center" backgroundColor="transpBlack" transparent="1">
 			<convert type="ServicePosition">Position</convert>
 		</widget>
-		<ePixmap position="120,77" size="600,16" pixmap="AcjTeam-HD/mpslider.png" zPosition="3" alphatest="blend" />
-		<widget source="session.CurrentService" render="PositionGauge" position="140,78" size="560,14" zPosition="2" pointer="AcjTeam-HD/pointer.png:13,3">
+		<ePixmap position="120,77" size="600,16" pixmap="skin_default/mpslider.png" zPosition="3" alphatest="blend" />
+		<widget source="session.CurrentService" render="PositionGauge" position="140,78" size="560,14" zPosition="2" pointer="skin_default/pointer.png:13,3">
 			<convert type="ServicePosition">Gauge</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="730,73" size="100,25" font="Regular;22" halign="left" valign="center" backgroundColor="transpBlack" transparent="1">
@@ -1093,17 +1093,17 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="session.CurrentService" render="Label" position="360,98" size="120,25" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1">
 			<convert type="ServicePosition">Length</convert>
 		</widget>
-		<ePixmap position="845,80" zPosition="1" size="260,32" pixmap="AcjTeam-HD/mp_buttons.png" alphatest="on" />
+		<ePixmap position="845,80" zPosition="1" size="260,32" pixmap="skin_default/mp_buttons.png" alphatest="on" />
 	</screen>
 	<screen name="MovieContextMenu" position="340,180" size="600,400" title="Movielist menu">
 		<eLabel position="0,0" size="600,2" backgroundColor="grey" />
-		<widget name="menu" position="20,20" size="560,360" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" />
+		<widget name="menu" position="20,20" size="560,360" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" />
 	</screen>
 	<screen name="MovieSelection" position="90,100" size="1100,560" title="Select a movie">
 		<eLabel position="0,0" size="1100,2" backgroundColor="grey" />
 		<eLabel position="780,0" size="2,518" backgroundColor="grey" />
 		<widget name="waitingtext" position="10,20" size="760,450" zPosition="4" font="Regular;22" halign="center" valign="center" />
-		<widget name="list" position="10,20" size="760,450" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select780_75.png" />
+		<widget name="list" position="10,20" size="760,450" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select780_75.png" />
 		<widget name="freeDiskSpace" position="10,485" size="760,25" font="Regular;22" halign="center" />
 		<widget source="Service" render="Label" position="790,10" zPosition="1" size="300,50" font="Regular;24" halign="center" foregroundColor="white">
 			<convert type="MovieInfo">RecordServiceName</convert>
@@ -1127,7 +1127,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	</screen>
 	<screen name="NameserverSetup" position="90,100" size="1100,560" title="Nameserver Setup">
 		<eLabel position="0,0" size="1100,2" backgroundColor="grey" />
-		<widget name="config" position="20,20" size="740,375" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" />
+		<widget name="config" position="20,20" size="740,375" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" />
 		<widget source="introduction" render="Label" position="20,470" size="740,30" zPosition="10" font="Regular;24" halign="center" transparent="1" />
 		<eLabel position="780,0" size="2,518" backgroundColor="grey" />
 		<eLabel position="0,518" size="1100,2" backgroundColor="grey" />
@@ -1138,7 +1138,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	<screen name="NetworkAdapterSelection" position="90,100" size="1100,560" title="Select Network Adapter">
 		<eLabel position="0,0" size="1100,2" backgroundColor="grey" />
 
- 		<widget source="list" render="Listbox" position="20,20" size="740,375" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select780_75.png">
+ 		<widget source="list" render="Listbox" position="20,20" size="740,375" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select780_75.png">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (54, 54), png = 3), # index 3 is the interface pixmap
@@ -1165,34 +1165,34 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="Adaptertext" position="20,20" size="650,25" zPosition="1" font="Regular;22" foregroundColor="grey" />
 		<widget name="Adapter" position="20,50" size="650,25" zPosition="1" font="Regular;22" foregroundColors="#8c8c93,#f23d21,#1cff1c" />
 		<widget name="AdapterInfo_OK" position="720,35" size="38,31" zPosition="2" pixmap="skin_default/icons/lock_on.png" alphatest="on" />
-		<widget name="AdapterInfo" position="782,27" size="318,50" zPosition="1" pixmaps="AcjTeam-HD/menu/select300_45black.png,AcjTeam-HD/menu/select600_50.png" />
+		<widget name="AdapterInfo" position="782,27" size="318,50" zPosition="1" pixmaps="skin_default/menu/select300_45black.png,skin_default/menu/select600_50.png" />
 		<widget name="AdapterInfo_Text" position="782,27" size="318,50" zPosition="2" font="Regular;22" halign="center" valign="center" transparent="1" foregroundColors="#ffffff,#ffffff,#ffffff" />
 		<eLabel position="20,90" size="740,1" backgroundColor="darkgrey" />
 		<widget name="Networktext" position="20,100" size="650,25" zPosition="1" font="Regular;22" foregroundColor="grey" />
 		<widget name="Network" position="20,130" size="650,25" zPosition="1" font="Regular;22" foregroundColors="#8c8c93,#f23d21,#1cff1c" />
 		<widget name="NetworkInfo_Check" position="720,115" size="38,31" zPosition="2" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_error.png" alphatest="on" />
-		<widget name="NetworkInfo" position="782,107" size="318,50" zPosition="1" pixmaps="AcjTeam-HD/menu/select300_45black.png,AcjTeam-HD/menu/select600_50.png" />
+		<widget name="NetworkInfo" position="782,107" size="318,50" zPosition="1" pixmaps="skin_default/menu/select300_45black.png,skin_default/menu/select600_50.png" />
 		<widget name="NetworkInfo_Text" position="782,107" size="318,50" zPosition="2" font="Regular;22" halign="center" valign="center" transparent="1" foregroundColors="#ffffff,#ffffff,#ffffff" />
 		<eLabel position="20,170" size="740,1" backgroundColor="darkgrey" />
 		<widget name="Dhcptext" position="20,180" size="650,25" zPosition="1" font="Regular;22" foregroundColor="grey" />
 		<widget name="Dhcp" position="20,210" size="650,25" zPosition="1" font="Regular;22" foregroundColors="#8c8c93,#f23d21,#1cff1c" />
 		<widget name="DhcpInfo_Check" position="720,195" size="38,31" zPosition="2" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_error.png" alphatest="on" />
-		<widget name="DhcpInfo" position="782,187" size="318,50" zPosition="1" pixmaps="AcjTeam-HD/menu/select300_45black.png,AcjTeam-HD/menu/select600_50.png" />
+		<widget name="DhcpInfo" position="782,187" size="318,50" zPosition="1" pixmaps="skin_default/menu/select300_45black.png,skin_default/menu/select600_50.png" />
 		<widget name="DhcpInfo_Text" position="782,187" size="318,50" zPosition="2" font="Regular;22" halign="center" valign="center" transparent="1" foregroundColors="#ffffff,#ffffff,#ffffff" />
 		<eLabel position="20,250" size="740,1" backgroundColor="darkgrey" />
 		<widget name="IPtext" position="20,260" size="650,25" zPosition="1" font="Regular;22" foregroundColor="grey" />
 		<widget name="IP" position="20,290" size="650,25" zPosition="1" font="Regular;22" foregroundColors="#8c8c93,#f23d21,#1cff1c" />
 		<widget name="IPInfo_Check" position="720,275" size="38,31" zPosition="2" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_error.png" alphatest="on" />
-		<widget name="IPInfo" position="782,267" size="318,50" zPosition="1" pixmaps="AcjTeam-HD/menu/select300_45black.png,AcjTeam-HD/menu/select600_50.png" />
+		<widget name="IPInfo" position="782,267" size="318,50" zPosition="1" pixmaps="skin_default/menu/select300_45black.png,skin_default/menu/select600_50.png" />
 		<widget name="IPInfo_Text" position="782,267" size="318,50" zPosition="2" font="Regular;22" halign="center" valign="center" transparent="1" foregroundColors="#ffffff,#ffffff,#ffffff" />
 		<eLabel position="20,330" size="740,1" backgroundColor="darkgrey" />
 		<widget name="DNStext" position="20,340" size="650,25" zPosition="1" font="Regular;22" foregroundColor="grey" />
 		<widget name="DNS" position="20,370" size="650,25" zPosition="1" font="Regular;22" foregroundColors="#8c8c93,#f23d21,#1cff1c" />
 		<widget name="DNSInfo_Check" position="720,355" size="38,31" zPosition="2" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_error.png" alphatest="on" />
-		<widget name="DNSInfo" position="782,347" size="318,50" zPosition="1" pixmaps="AcjTeam-HD/menu/select300_45black.png,AcjTeam-HD/menu/select600_50.png" />
+		<widget name="DNSInfo" position="782,347" size="318,50" zPosition="1" pixmaps="skin_default/menu/select300_45black.png,skin_default/menu/select600_50.png" />
 		<widget name="DNSInfo_Text" position="782,347" size="318,50" zPosition="2" font="Regular;22" halign="center" valign="center" transparent="1" foregroundColors="#ffffff,#ffffff,#ffffff" />
 		<eLabel position="20,410" size="740,1" backgroundColor="darkgrey" />
-		<widget name="EditSettingsButton" position="782,427" size="318,50" zPosition="1" pixmaps="AcjTeam-HD/menu/select300_45black.png,AcjTeam-HD/menu/select600_50.png" />
+		<widget name="EditSettingsButton" position="782,427" size="318,50" zPosition="1" pixmaps="skin_default/menu/select300_45black.png,skin_default/menu/select600_50.png" />
 		<widget name="EditSettings_Text" position="782,427" size="318,50" zPosition="2" font="Regular;22" halign="center" valign="center" transparent="1" foregroundColors="#ffffff,#ffffff,#ffffff" />
 		<widget name="InfoText" position="20,22" size="740,476" zPosition="25" font="Regular;24" halign="center" valign="center" />
 		<eLabel position="780,0" size="2,518" backgroundColor="grey" />
@@ -1210,17 +1210,17 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="on" />
 		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="on" />
 		<widget name="wizard" position="450,120" size="110,174" pixmap="skin_default/wizard.png" zPosition="10" transparent="1" alphatest="on" />
-		<ePixmap pixmap="AcjTeam-HD/buttons/red.png" position="450,305" size="21,21" alphatest="on" />
+		<ePixmap pixmap="skin_default/buttons/red.png" position="450,305" size="21,21" alphatest="on" />
 		<widget name="languagetext" position="485,305" size="150,23" font="Regular;21" backgroundColor="background" transparent="1" />
 		<widget name="text" position="640,120" size="500,240" font="Regular;23" backgroundColor="background" transparent="1" />
-		<widget source="list" render="Listbox" position="460,370" size="730,150" zPosition="13" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png">
+		<widget source="list" render="Listbox" position="460,370" size="730,150" zPosition="13" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png">
 			<convert type="StringList" />
 		</widget>
-		<widget name="config" position="460,370" size="730,150" zPosition="14" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" />
+		<widget name="config" position="460,370" size="730,150" zPosition="14" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" />
 	</screen>
 	<screen name="NimSelection" position="340,134" size="600,422" title="Choose Tuner">
 		<eLabel position="0,0" size="600,2" backgroundColor="grey" zPosition="5"/>
-		<widget source="nimlist" render="Listbox" position="0,0" size="600,420" selectionPixmap="AcjTeam-HD/menu/select1080_70.png">
+		<widget source="nimlist" render="Listbox" position="0,0" size="600,420" selectionPixmap="skin_default/menu/select1080_70.png">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos = (10, 5), size = (360, 30), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the nim name,
@@ -1234,7 +1234,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	</screen>
 	<screen name="NimSetup" position="340,134" size="600,502" title="Reception Settings">
 		<eLabel position="0,0" size="600,2" backgroundColor="grey" zPosition="5" />
-		<widget name="config" position="10,12" size="580,475" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" />
+		<widget name="config" position="10,12" size="580,475" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" />
 	</screen>
 	<screen name="NumberZap" position="440,355" size="400,60" title="Channel">
 		<eLabel position="0,0" size="400,2" backgroundColor="grey" zPosition="5" />
@@ -1258,19 +1258,19 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	</screen>
 	<screen name="ParentalControlChangePin" position="340,134" size="600,502" title="Change pin code">
 		<eLabel position="0,0" size="600,2" backgroundColor="grey" zPosition="5" />
-		<widget name="config" position="10,12" size="580,475" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" />
+		<widget name="config" position="10,12" size="580,475" selectionPixmap="skin_default/menu/select1080_25.png" />
 	</screen>
 	<screen name="ParentalControlEditor" position="340,134" size="600,502" title="Parental control services Editor">
 		<eLabel position="0,0" size="600,2" backgroundColor="grey" zPosition="5" />
-		<widget name="servicelist" position="10,12" size="580,475" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" />
+		<widget name="servicelist" position="10,12" size="580,475" selectionPixmap="skin_default/menu/select1080_25.png" />
 	</screen>
 	<screen name="ParentalControlSetup" position="340,134" size="600,502" title="Parental control setup">
 		<eLabel position="0,0" size="600,2" backgroundColor="grey" zPosition="5" />
-		<widget name="config" position="10,12" size="580,475" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" />
+		<widget name="config" position="10,12" size="580,475" selectionPixmap="skin_default/menu/select1080_25.png" />
 	</screen>
 	<screen name="PluginBrowser" position="240,134" size="800,492" title="Plugin browser">
 		<eLabel position="0,0" size="800,2" backgroundColor="grey" />
-		<widget name="list" position="0,0" size="801,452" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select800_50.png" />
+		<widget name="list" position="0,0" size="801,452" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select800_50.png" />
 		<eLabel position="0,450" size="800,2" backgroundColor="grey" />
 		<widget name="red" position="50,457" size="350,30" font="Regular;24" halign="center" valign="center" foregroundColor="red" />
 		<widget name="green" position="400,457" size="350,30" font="Regular;24" halign="center" valign="center" foregroundColor="green" />
@@ -1278,12 +1278,12 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	<screen name="PluginDownloadBrowser" position="240,134" size="800,492" title="Downloadable plugins">
 		<eLabel position="0,0" size="800,2" backgroundColor="grey" />
 		<widget name="text" position="20,30" size="760,50" font="Regular;23" />
-		<widget name="list" position="0,0" size="801,452" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select800_50.png" />
+		<widget name="list" position="0,0" size="801,452" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select800_50.png" />
 		<eLabel position="0,450" size="800,2" backgroundColor="grey" />
 	</screen>
 	<screen name="PositionerSetup" position="240,134" size="800,492" title="Positioner setup...">
 		<eLabel position="0,0" size="800,2" backgroundColor="grey" />
-		<widget name="list" position="200,10" size="400,155" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" />
+		<widget name="list" position="200,10" size="400,155" selectionPixmap="skin_default/menu/select1080_25.png" />
 		<widget name="red" position="0, 180" size="200,100" backgroundColor="red" halign="center" valign="center" font="Regular;21" />
 		<widget name="green" position="200,180" size="200,100" backgroundColor="green" halign="center" valign="center" font="Regular;21" />
 		<widget name="yellow" position="400,180" size="200,100" backgroundColor="yellow" halign="center" valign="center" font="Regular;21" />
@@ -1329,7 +1329,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
 		<eLabel position="10,60" zPosition="1" size="1102,2" backgroundColor="white" />
-		<ePixmap pixmap="AcjTeam-HD/picon_default.png" position="30,73" size="100,60" zPosition="1" alphatest="blend" />
+		<ePixmap pixmap="skin_default/picon_default.png" position="30,73" size="100,60" zPosition="1" alphatest="blend" />
 		<!-- widget source="session.CurrentService" render="Picon" position="30,73" zPosition="1" size="100,60" alphatest="blend">
 				<convert type="ServiceName">Reference</convert>
 			</widget -->
@@ -1342,17 +1342,17 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<ePixmap position="820,67" size="50,25" zPosition="20" pixmap="AcjTeam-HD/endback.png" />
+		<ePixmap position="820,67" size="50,25" zPosition="20" pixmap="skin_default/endback.png" />
 		<widget source="session.Event_Now" render="Label" position="300,67" size="570,25" zPosition="21" halign="left" font="Regular;22" backgroundColor="background" transparent="1" noWrap="1">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<ePixmap position="820,67" size="50,25" zPosition="22" pixmap="AcjTeam-HD/end.png" alphatest="blend" />
+		<ePixmap position="820,67" size="50,25" zPosition="22" pixmap="skin_default/end.png" alphatest="blend" />
 		<widget source="session.Event_Now" render="Label" position="870,67" size="120,25" halign="right" font="Regular;22" backgroundColor="background" transparent="1">
 			<convert type="EventTime">Remaining</convert>
 			<convert type="RemainingToText">InMinutes</convert>
 		</widget>
-		<ePixmap position="150,97" size="840,12" zPosition="2" pixmap="AcjTeam-HD/slider_back.png" alphatest="blend" />
-		<widget source="session.Event_Now" render="Progress" pixmap="AcjTeam-HD/slider.png" position="150,97" size="840,12" zPosition="1" transparent="2">
+		<ePixmap position="150,97" size="840,12" zPosition="2" pixmap="skin_default/slider_back.png" alphatest="blend" />
+		<widget source="session.Event_Now" render="Progress" pixmap="skin_default/slider.png" position="150,97" size="840,12" zPosition="1" transparent="2">
 			<convert type="EventTime">Progress</convert>
 		</widget>
 		<widget source="session.Event_Next" render="Label" position="140,114" size="65,25" halign="right" font="Regular;22" foregroundColor="grey" backgroundColor="background" transparent="1">
@@ -1364,16 +1364,16 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<ePixmap position="820,114" size="50,25" zPosition="20" pixmap="AcjTeam-HD/endback.png" />
+		<ePixmap position="820,114" size="50,25" zPosition="20" pixmap="skin_default/endback.png" />
 		<widget source="session.Event_Next" render="Label" position="300,114" size="570,25" zPosition="21" halign="left" font="Regular;22" foregroundColor="grey" backgroundColor="background" transparent="1" noWrap="1">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<ePixmap position="820,114" size="50,25" zPosition="22" pixmap="AcjTeam-HD/end.png" alphatest="blend" />
+		<ePixmap position="820,114" size="50,25" zPosition="22" pixmap="skin_default/end.png" alphatest="blend" />
 		<widget source="session.Event_Next" render="Label" position="870,114" size="120,25" halign="right" font="Regular;22" foregroundColor="grey" backgroundColor="background" transparent="1">
 			<convert type="EventTime">Duration</convert>
 			<convert type="ClockToText">InMinutes</convert>
 		</widget>
-		<widget source="RdsDecoder" render="Pixmap" pixmap="AcjTeam-HD/icons/rass_logo.png" position="1010,73" size="100,60" alphatest="on">
+		<widget source="RdsDecoder" render="Pixmap" pixmap="skin_default/icons/rass_logo.png" position="1010,73" size="100,60" alphatest="on">
 			<convert type="RdsInfo">RasInteractiveAvailable</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
@@ -1389,7 +1389,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	</screen>
 	<screen name="RecordPathsSettings" position="190,100" size="900,560" title="Recording paths...">
 		<eLabel position="0,0" size="900,2" backgroundColor="grey" />
-		<widget name="config" position="20,5" size="860,325" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" />
+		<widget name="config" position="20,5" size="860,325" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" />
 		<eLabel position="0,518" size="900,2" backgroundColor="grey" />
 		<widget source="introduction" render="Label" position="20,460" size="900,50" zPosition="10" font="Regular;24" halign="center" valign="center"  />
 		<widget source="key_red" render="Label" position="20,525" zPosition="2" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="red" backgroundColor="darkgrey" transparent="1" />
@@ -1434,18 +1434,18 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			<convert type="ConditionalShowHide">Invert</convert>
 		</widget>
 		<eLabel position="0,152" size="600,1" backgroundColor="grey" zPosition="5" />
-		<widget name="config" position="10,165" size="580,240" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" />
+		<widget name="config" position="10,165" size="580,240" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" />
 		<widget name="introduction" position="0,0" size="0,0" font="Regular;23" />
 	</screen>
 	<screen name="ScanSetup" position="340,134" size="600,502" title="Service scan">
 		<eLabel position="0,0" size="600,2" backgroundColor="grey" zPosition="5" />
-		<widget name="config" position="10,12" size="580,425" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" />
+		<widget name="config" position="10,12" size="580,425" selectionPixmap="skin_default/menu/select1080_25.png" />
 		<widget name="introduction" position="10,465" size="580,25" font="Regular;22" halign="center" />
 	</screen>
 	<screen name="ScanSimple" position="340,134" size="600,502" title="Service scan">
 		<eLabel position="0,0" size="600,2" backgroundColor="grey" zPosition="5" />
 		<widget name="header" position="10,10" size="580,25" font="Regular;23" />
-		<widget name="config" position="10,55" size="580,350" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" />
+		<widget name="config" position="10,55" size="580,350" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" />
 		<widget name="footer" position="10,465" size="580,25" font="Regular;22" halign="center" />
 	</screen>
 	<screen name="ServiceInfo" position="90,100" size="1100,560" title="Serviceinfo">
@@ -1478,21 +1478,21 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="transponder" position="100,55" size="430,25" font="Regular;22" />
 		<widget name="scan_state" position="20,105" size="560,25" zPosition="2" font="Regular;22" />
 		<widget name="pass" position="20,105" size="560,25" font="Regular;22" />
-		<widget name="scan_progress" position="20,140" size="560,20" pixmap="AcjTeam-HD/progress_big.png" borderWidth="1" borderColor="#cccccc" />
+		<widget name="scan_progress" position="20,140" size="560,20" pixmap="skin_default/progress_big.png" borderWidth="1" borderColor="#cccccc" />
 		<widget name="servicelist" position="20,175" size="560,300" selectionDisabled="1" />
 	</screen>
 	<screen name="Setup" position="190,100" size="900,560" title="Setup">
 		<eLabel position="0,0" size="900,2" backgroundColor="grey" />
 		<widget source="Title" render="Label" position="20,10" size="580,35" font="Regular;23" />
 		<eLabel position="0,45" size="900,2" backgroundColor="grey" />
-		<widget name="config" position="20,65" size="860,425" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" />
+		<widget name="config" position="20,65" size="860,425" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" />
 		<eLabel position="0,518" size="900,2" backgroundColor="grey" />
 		<widget source="key_red" render="Label" position="190,525" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="red" />
 		<widget source="key_green" render="Label" position="460,525" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="green" />
 	</screen>
 	<screen name="SimpleChannelSelection" position="90,100" size="1100,560" title="Channel Selection">
 		<eLabel position="0,0" size="1100,2" backgroundColor="grey" />
-		<widget name="list" position="10,20" size="1080,475" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" />
+		<widget name="list" position="10,20" size="1080,475" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" />
 		<eLabel position="0,518" size="1100,2" backgroundColor="grey" />
 		<widget name="key_red" position=" 20,525" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="red" />
 		<widget name="key_green" position="290,525" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="green" />
@@ -1501,7 +1501,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	</screen>
 	<screen name="SkinSelector" position="240,100" size="800,560" title="Choose your Skin">
 		<eLabel position="0,0" size="800,2" backgroundColor="grey" zPosition="5" />
-		<widget name="SkinList" position="10,10" size="450,475" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" />
+		<widget name="SkinList" position="10,10" size="450,475" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" />
 		<eLabel position="470,2" size="2,516" backgroundColor="grey" zPosition="5" />
 		<widget name="Preview" position="500,140" size="280,210" alphatest="on" />
 		<eLabel position="0,518" size="800,2" backgroundColor="grey" />
@@ -1517,10 +1517,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="on" />
 		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="on" />
 		<widget name="wizard" position="450,120" size="110,174" pixmap="skin_default/wizard.png" zPosition="10" transparent="1" alphatest="on" />
-		<ePixmap pixmap="AcjTeam-HD/buttons/red.png" position="450,305" size="21,21" alphatest="on" />
+		<ePixmap pixmap="skin_default/buttons/red.png" position="450,305" size="21,21" alphatest="on" />
 		<widget name="languagetext" position="485,305" size="150,23" font="Regular;21" backgroundColor="background" transparent="1" />
 		<widget name="text" position="640,120" size="500,210" font="Regular;23" backgroundColor="background" transparent="1" />
-		<widget source="list" render="Listbox" position="460,340" size="730,200" zPosition="1" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png">
+		<widget source="list" render="Listbox" position="460,340" size="730,200" zPosition="1" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png">
 			<convert type="StringList" />
 		</widget>
 		<widget name="config" position="460,340" size="730,200" zPosition="2" scrollbarMode="showOnDemand" transparent="1" />
@@ -1552,7 +1552,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	</screen>
 	<screen name="Subtitles" position="340,134" size="600,502" title="Subtitle selection">
 		<eLabel position="0,0" size="600,2" backgroundColor="grey" />
-		<widget name="config" position="20,20" zPosition="1" size="560,400" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" />
+		<widget name="config" position="20,20" zPosition="1" size="560,400" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" />
 	</screen>
 	<screen name="SubtitleDisplay" position="0,0" size="1280,720" zPosition="-1" flags="wfNoBorder" backgroundColor="transparent" />
 	<screen name="TimerEdit" position="90,100" size="1100,560" title="Timer Edit">
@@ -1566,7 +1566,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	</screen>
 	<screen name="TimerEditList" position="90,100" size="1100,560" title="Timer Editor">
 		<eLabel position="0,0" size="1100,2" backgroundColor="grey" />
-		<widget name="timerlist" position="10,20" size="1080,350" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_70.png" />
+		<widget name="timerlist" position="10,20" size="1080,350" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_70.png" />
 		<eLabel position="0,518" size="1100,2" backgroundColor="grey" />
 		<widget name="key_red" position=" 20,525" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="red" />
 		<widget name="key_green" position="290,525" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="green" />
@@ -1575,7 +1575,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	</screen>
 	<screen name="TimerEntry" position="90,100" size="1100,560" title="Timer entry">
 		<eLabel position="0,0" size="1100,2" backgroundColor="grey" />
-		<widget name="config" position="10,20" size="1080,350" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" />
+		<widget name="config" position="10,20" size="1080,350" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" />
 		<eLabel position="0,518" size="1100,2" backgroundColor="grey" />
 		<widget name="canceltext" position=" 20,525" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="red" />
 		<widget name="oktext" position="290,525" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="green" />
@@ -1584,7 +1584,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	</screen>
 	<screen name="TimerLog" position="90,100" size="1100,560" title="Timer log">
 		<eLabel position="0,0" size="1100,2" backgroundColor="grey" />
-		<widget name="loglist" position="10,10" size="1080,350" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" />
+		<widget name="loglist" position="10,10" size="1080,350" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" />
 		<eLabel position="0,370" size="1100,2" backgroundColor="grey" />
 		<widget name="logentry" position="10,380" size="1080,130" font="Regular;20" />
 		<eLabel position="0,518" size="1100,2" backgroundColor="grey" />
@@ -1595,7 +1595,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	</screen>
 	<screen name="TimerSanityConflict" position="90,100" size="1100,560" title="Timer sanity error">
 		<eLabel position="0,0" size="1100,2" backgroundColor="grey" />
-		<widget name="list" position="10,10" size="1080,250" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" />
+		<widget name="list" position="10,10" size="1080,250" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" />
 		<eLabel position="0,270" size="1100,2" backgroundColor="grey" />
 		<eLabel position="549,0" size="2,248" backgroundColor="grey" />
 		<widget name="timer1" position="10,45" size="530,225" scrollbarMode="showNever" />
@@ -1608,7 +1608,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	</screen>
 	<screen name="TimerSelection" position="90,100" size="1100,560" title="Timer selection">
 		<eLabel position="0,0" size="1100,2" backgroundColor="grey" />
-		<widget name="timerlist" position="10,20" size="1080,350" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_70.png" />
+		<widget name="timerlist" position="10,20" size="1080,350" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_70.png" />
 		<eLabel position="0,518" size="1100,2" backgroundColor="grey" />
 	</screen>
 	<screen name="TutorialWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder">
@@ -1631,11 +1631,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="on" />
 		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="on" />
 		<widget name="wizard" position="450,120" size="110,174" pixmap="skin_default/wizard.png" zPosition="10" transparent="1" alphatest="on" />
-		<ePixmap pixmap="AcjTeam-HD/buttons/red.png" position="450,305" size="21,21" alphatest="on" />
+		<ePixmap pixmap="skin_default/buttons/red.png" position="450,305" size="21,21" alphatest="on" />
 		<widget name="languagetext" position="485,305" size="150,23" font="Regular;21" backgroundColor="background" transparent="1" />
 		<widget name="text" position="640,120" size="520,240" font="Regular;23" backgroundColor="background" transparent="1" />
 		<widget name="portpic" position="450,370" size="150,150" zPosition="10" transparent="1" alphatest="on" />
-		<widget source="list" render="Listbox" position="640,370" size="520,150" zPosition="13" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png">
+		<widget source="list" render="Listbox" position="640,370" size="520,150" zPosition="13" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png">
 			<convert type="StringList" />
 		</widget>
 		<widget name="config" position="640,370" size="520,150" zPosition="14" scrollbarMode="showOnDemand" transparent="1" />
@@ -1648,7 +1648,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="list" position="120,170" size="540,225" selectionDisabled="1" transparent="1" />
 		<eLabel position="780,0" size="2,518" backgroundColor="grey" />
 		<eLabel position="0,518" size="1100,2" backgroundColor="grey" />
-		<ePixmap position="915,390" size="165,110" zPosition="2" pixmap="AcjTeam-HD/icons/keyb.png" transparent="1" alphatest="blend" />
+		<ePixmap position="915,390" size="165,110" zPosition="2" pixmap="skin_default/icons/keyb.png" transparent="1" alphatest="blend" />
 	</screen>
 	<screen name="WlanStatus" position="90,100" size="1100,560" title="Wireless Network State">
 		<eLabel position="0,0" size="1100,2" backgroundColor="grey" />
@@ -1669,17 +1669,17 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="enc" render="Label" position="380,280" size="280,35" valign="center" font="Regular;22" transparent="1" />
 		<eLabel position="780,0" size="2,518" backgroundColor="grey" />
 		<eLabel position="0,518" size="1100,2" backgroundColor="grey" />
-		<widget name="statuspic" position="50,527" size="21,21" zPosition="10" pixmaps="AcjTeam-HD/buttons/green.png,AcjTeam-HD/buttons/grey.png" transparent="1" alphatest="on" />
+		<widget name="statuspic" position="50,527" size="21,21" zPosition="10" pixmaps="skin_default/buttons/green.png,skin_default/buttons/grey.png" transparent="1" alphatest="on" />
 		<widget source="Statustext" render="Label" position="80,525" size="270,27" zPosition="10" font="Regular;24" transparent="1" />
-		<ePixmap position="420,527" size="21,21" zPosition="10" pixmap="AcjTeam-HD/buttons/red.png" transparent="1" alphatest="on" />
+		<ePixmap position="420,527" size="21,21" zPosition="10" pixmap="skin_default/buttons/red.png" transparent="1" alphatest="on" />
 		<widget source="key_red" render="Label" position="450,525" size="120,27" zPosition="10" font="Regular;24" transparent="1" />
-		<ePixmap position="940,400" size="140,110" zPosition="2" pixmap="AcjTeam-HD/icons/wlan.png" transparent="1" alphatest="blend" />
+		<ePixmap position="940,400" size="140,110" zPosition="2" pixmap="skin_default/icons/wlan.png" transparent="1" alphatest="blend" />
 	</screen>
 	<screen name="WlanScan" position="90,100" size="1100,560" title="Choose a Wireless Network">
 		<eLabel position="0,0" size="1100,2" backgroundColor="grey" />
 		<widget source="info" render="Label" position="20,20" size="740,25" zPosition="10" font="Regular;22" transparent="1" />
 		<eLabel position="20,55" size="740,2" backgroundColor="grey" />
-		<widget source="list" render="Listbox" position="20,70" size="740,420" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_60.png">
+		<widget source="list" render="Listbox" position="20,70" size="740,420" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_60.png">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos = (0, 0), size = (550, 30), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the essid
@@ -1696,17 +1696,17 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		</widget>
 		<eLabel position="780,0" size="2,518" backgroundColor="grey" />
 		<eLabel position="0,518" size="1100,2" backgroundColor="grey" />
-		<ePixmap pixmap="AcjTeam-HD/buttons/red.png" position="90,527" size="21,21" alphatest="on" />
-		<ePixmap pixmap="AcjTeam-HD/buttons/green.png" position="300,527" size="21,21" alphatest="on" />
-		<ePixmap pixmap="AcjTeam-HD/buttons/yellow.png" position="510,527" size="21,21" alphatest="on" />
+		<ePixmap pixmap="skin_default/buttons/red.png" position="90,527" size="21,21" alphatest="on" />
+		<ePixmap pixmap="skin_default/buttons/green.png" position="300,527" size="21,21" alphatest="on" />
+		<ePixmap pixmap="skin_default/buttons/yellow.png" position="510,527" size="21,21" alphatest="on" />
 		<widget source="key_red" render="Label" position="120,525" size="170,27" zPosition="1" font="Regular;24" halign="left" backgroundColor="black" transparent="1" />
 		<widget source="key_green" render="Label" position="330,525" size="170,27" zPosition="1" font="Regular;24" halign="left" backgroundColor="black" transparent="1" />
 		<widget source="key_yellow" render="Label" position="540,525" size="170,27" zPosition="1" font="Regular;24" halign="left" backgroundColor="black" transparent="1" />
-		<ePixmap position="940,400" size="140,110" zPosition="2" pixmap="AcjTeam-HD/icons/wlan.png" transparent="1" alphatest="blend" />
+		<ePixmap position="940,400" size="140,110" zPosition="2" pixmap="skin_default/icons/wlan.png" transparent="1" alphatest="blend" />
 	</screen>
 	<screen name="BackupSelection" position="340,134" size="600,502" title="Select files/folders to backup...">
 		<eLabel position="0,0" size="600,2" backgroundColor="grey" zPosition="5" />
-		<widget name="checkList" position="10,10" size="580,440" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" />
+		<widget name="checkList" position="10,10" size="580,440" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" />
 		<eLabel position="0,460" size="600,2" backgroundColor="grey" zPosition="5" />
 		<widget source="key_red" render="Label" position=" 0,467" size="200,30" font="Regular;24" halign="center" valign="center" foregroundColor="red" />
 		<widget source="key_green" render="Label" position="200,467" size="200,30" font="Regular;24" halign="center" valign="center" foregroundColor="green" />
@@ -1714,7 +1714,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	</screen>
 	<screen name="IpkgInstaller" position="340,134" size="600,502" title="Ipkg Installer...">
 		<eLabel position="0,0" size="600,2" backgroundColor="grey" zPosition="5" />
-		<widget name="list" position="10,10" size="580,400" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" />
+		<widget name="list" position="10,10" size="580,400" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" />
 		<widget source="introduction" render="Label" position="10,430" size="580,30" zPosition="10" font="Regular;24" halign="center" transparent="1" />
 		<eLabel position="0,460" size="600,2" backgroundColor="grey" zPosition="5" />
 		<widget source="key_red" render="Label" position=" 0,467" size="200,30" font="Regular;24" halign="center" valign="center" foregroundColor="red" />
@@ -1722,7 +1722,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	</screen>
 	<screen name="IPKGMenu" position="340,134" size="600,502" title="Select IPKG source.....">
 		<eLabel position="0,0" size="600,2" backgroundColor="grey" zPosition="5" />
-		<widget name="filelist" position="10,10" size="580,440" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" />
+		<widget name="filelist" position="10,10" size="580,440" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" />
 		<eLabel position="0,460" size="600,2" backgroundColor="grey" zPosition="5" />
 		<widget source="key_red" render="Label" position=" 0,467" size="200,30" font="Regular;24" halign="center" valign="center" foregroundColor="red" />
 		<widget source="key_green" render="Label" position="200,467" size="200,30" font="Regular;24" halign="center" valign="center" foregroundColor="green" />
@@ -1735,7 +1735,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	</screen>
 	<screen name="PacketManager" position="240,134" size="800,502" title="IPKG upgrade...">
 		<eLabel position="0,0" size="800,2" backgroundColor="grey" zPosition="5"/>
-		<widget source="list" render="Listbox"  position="15,20" size="770,424" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_60.png">
+		<widget source="list" render="Listbox"  position="15,20" size="770,424" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_60.png">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos = (10, 5), size = (670, 28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
@@ -1762,7 +1762,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	</screen>
 	<screen name="RestoreMenu" position="340,134" size="600,502" title="Restore Backups">
 		<eLabel position="0,0" size="600,2" backgroundColor="grey" zPosition="5" />
-		<widget name="filelist" position="10,10" size="580,440" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" />
+		<widget name="filelist" position="10,10" size="580,440" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" />
 		<eLabel position="0,460" size="600,2" backgroundColor="grey" zPosition="5" />
 		<widget source="key_red" render="Label" position=" 0,467" size="200,30" font="Regular;24" halign="center" valign="center" foregroundColor="red" />
 		<widget source="key_green" render="Label" position="200,467" size="200,30" font="Regular;24" halign="center" valign="center" foregroundColor="green" />
@@ -1776,9 +1776,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<eLabel position="1,1" size="2,552" backgroundColor="grey" zPosition="5"/>
 		<eLabel position="300,101" size="2,450" backgroundColor="grey" zPosition="5"/>
 		<eLabel position="669,1" size="2,552" backgroundColor="grey" zPosition="5"/>
-		<ePixmap position="61,11" size="480,66" pixmap="AcjTeam-HD/menu/db.png" alphatest="blend"/>
+		<ePixmap position="61,11" size="480,66" pixmap="skin_default/menu/db.png" alphatest="blend"/>
 		<eLabel text="Softwaremanager..." position="1,66" size="600,32" font="Regular;25" halign="center" backgroundColor="transpBlack" transparent="1"/>
-		<widget source="menu" render="Listbox" position="302,101" size="367,450" scrollbarMode="showNever" selectionPixmap="AcjTeam-HD/menu/select430_45.png">
+		<widget source="menu" render="Listbox" position="302,101" size="367,450" scrollbarMode="showNever" selectionPixmap="skin_default/menu/select430_45.png">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos = (0, 9), size = (367, 30), flags = RT_HALIGN_CENTER, text = 1), # index 0 is the MenuText,
@@ -1815,13 +1815,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="on" />
 		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="on" />
 		<widget name="wizard" position="450,120" size="110,174" pixmap="skin_default/wizard.png" zPosition="10" transparent="1" alphatest="on" />
-		<ePixmap pixmap="AcjTeam-HD/buttons/red.png" position="450,305" size="21,21" alphatest="on" />
+		<ePixmap pixmap="skin_default/buttons/red.png" position="450,305" size="21,21" alphatest="on" />
 		<widget name="languagetext" position="485,305" size="150,23" font="Regular;21" backgroundColor="#353e575e" transparent="1" />
 		<widget name="text" position="640,120" size="500,210" font="Regular;23" backgroundColor="#353e575e" transparent="1" />
-		<widget source="list" render="Listbox" position="460,340" size="730,200" zPosition="1" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png">
+		<widget source="list" render="Listbox" position="460,340" size="730,200" zPosition="1" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png">
 			<convert type="StringList" />
 		</widget>
-		<widget name="config" position="460,340" size="730,200" zPosition="2" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" />
+		<widget name="config" position="460,340" size="730,200" zPosition="2" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" />
 	</screen>
 	<screen name="Ipkg" position="340,134" size="600,502" title="Installing Software...">
 		<eLabel position="0,0" size="600,2" backgroundColor="grey" zPosition="5" />
@@ -1832,11 +1832,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	</screen>
 	<screen name="BackupScreen" position="340,134" size="600,502" title="Backup running...">
 		<eLabel position="0,0" size="600,2" backgroundColor="grey" zPosition="5" />
-		<widget name="config" position="10,10" size="580,440" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" />
+		<widget name="config" position="10,10" size="580,440" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" />
 	</screen>
 	<screen name="RestoreScreen" position="340,134" size="600,502" title="Restore running...">
 		<eLabel position="0,0" size="600,2" backgroundColor="grey" zPosition="5" />
-		<widget name="config" position="10,10" size="580,440" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" />
+		<widget name="config" position="10,10" size="580,440" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" />
 	</screen>
 	<screen name="IMDB" position="90,100" size="1100,560" title="IMDb Details Plugin">
 		<eLabel position="0,0" size="1100,2" backgroundColor="grey" />
@@ -1846,7 +1846,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="ratinglabel" position="790,34" size="210,24" font="Regular;20" halign="center" foregroundColor="#f0b400" transparent="1" />
 		<widget name="poster" position="30,60" size="110,180" alphatest="blend" />
 		<widget name="detailslabel" position="170,60" size="650,175" font="Regular;20" transparent="1" />
-		<widget name="menu" position="170,100" size="920,300" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" />
+		<widget name="menu" position="170,100" size="920,300" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" />
 		<widget name="castlabel" position="20,245" size="1060,240" font="Regular;20" transparent="1" />
 		<widget name="extralabel" position="20,170" size="1060,315" font="Regular;20" transparent="1" />
 		<widget name="statusbar" position="10,490" size="1080,20" font="Regular;18" foregroundColor="#cccccc" transparent="1" />
@@ -1869,14 +1869,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		</widget>
 		<eLabel position="70,100" size="560,30" zPosition="4" backgroundColor="grey" />
 		<eLabel text="F i l e l i s t" position="72,102" size="556,26" zPosition="5" font="Regular;22" halign="center" foregroundColor="black" backgroundColor="darkgrey" />
-		<widget name="filelist" position="80,145" size="540,299" scrollbarMode="showOnDemand" backgroundColor="black" selectionPixmap="AcjTeam-HD/menu/select780_23.png" />
+		<widget name="filelist" position="80,145" size="540,299" scrollbarMode="showOnDemand" backgroundColor="black" selectionPixmap="skin_default/menu/select780_23.png" />
 		<eLabel position="70,440" size="2,20" backgroundColor="darkgrey" />
 		<eLabel position="72,458" size="18,2" backgroundColor="darkgrey" />
 		<eLabel position="628,440" size="2,20" backgroundColor="darkgrey" />
 		<eLabel position="610,458" size="18,2" backgroundColor="darkgrey" />
 		<eLabel position="650,100" size="560,30" zPosition="4" backgroundColor="grey" />
 		<eLabel text="P l a y l i s t" position="652,102" size="556,26" zPosition="5" font="Regular;22" halign="center" foregroundColor="black" backgroundColor="darkgrey" />
-		<widget name="playlist" position="660,140" size="540,310" scrollbarMode="showOnDemand" selectionDisabled="1" backgroundColor="black" selectionPixmap="AcjTeam-HD/menu/select780_23.png" />
+		<widget name="playlist" position="660,140" size="540,310" scrollbarMode="showOnDemand" selectionDisabled="1" backgroundColor="black" selectionPixmap="skin_default/menu/select780_23.png" />
 		<eLabel position="650,440" size="2,20" backgroundColor="darkgrey" />
 		<eLabel position="652,458" size="18,2" backgroundColor="darkgrey" />
 		<eLabel position="1208,440" size="2,20" backgroundColor="darkgrey" />
@@ -1890,17 +1890,17 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="yeartext" position="300,585" size="100,25" font="Regular;20" valign="top" foregroundColor="darkgrey" backgroundColor="black" transparent="1" />
 		<widget name="year" position="410,585" size="580,25" font="Regular;20" valign="top" backgroundColor="black" transparent="1" />
 		<widget name="coverArt" pixmap="skin_default/no_coverArt.png" position="120,490" size="116,116" transparent="1" alphatest="blend" />
-		<widget name="repeat" pixmaps="AcjTeam-HD/icons/repeat_off.png,AcjTeam-HD/icons/repeat_on.png" position="1120,580" size="50,30" transparent="1" alphatest="blend" />
+		<widget name="repeat" pixmaps="skin_default/icons/repeat_off.png,skin_default/icons/repeat_on.png" position="1120,580" size="50,30" transparent="1" alphatest="blend" />
 		<eLabel position="80,620" zPosition="1" size="1120,2" backgroundColor="white" />
-		<ePixmap position="200,647" size="600,16" pixmap="AcjTeam-HD/mpslider.png" zPosition="13" backgroundColor="black" alphatest="on" />
-		<widget name="PositionGauge" position="220,648" size="560,14" zPosition="12" pointer="AcjTeam-HD/pointer.png:13,3" transparent="0" />
+		<ePixmap position="200,647" size="600,16" pixmap="skin_default/mpslider.png" zPosition="13" backgroundColor="black" alphatest="on" />
+		<widget name="PositionGauge" position="220,648" size="560,14" zPosition="12" pointer="skin_default/pointer.png:13,3" transparent="0" />
 		<widget source="session.CurrentService" render="Label" position="80,643" size="100,25" font="Regular;22" halign="right" valign="center" backgroundColor="black" transparent="1">
 			<convert type="ServicePosition">Position</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="820,643" size="100,25" font="Regular;22" halign="left" valign="center" backgroundColor="black" transparent="1">
 			<convert type="ServicePosition">Remaining</convert>
 		</widget>
-		<ePixmap position="900,640" zPosition="1" size="260,32" pixmap="AcjTeam-HD/mp_buttons.png" alphatest="on" />
+		<ePixmap position="900,640" zPosition="1" size="260,32" pixmap="skin_default/mp_buttons.png" alphatest="on" />
 		<eLabel name="nowPlaying" position="0,0" size="0,0" />
 		<widget name="genretext" position="0,0" size="0,0" />
 		<widget name="genre" position="0,0" size="0,0" />
@@ -1909,14 +1909,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	</screen>
 	<screen name="DirectoryBrowser" position="340,134" size="600,502" title="Directory browser">
 		<eLabel position="0,0" size="600,2" backgroundColor="grey" />
-		<widget name="filelist" position="10,10" size="580,480" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select780_22.png" />
+		<widget name="filelist" position="10,10" size="580,480" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select780_22.png" />
 		<eLabel position="0,518" size="900,2" backgroundColor="grey" />
 		<widget source="key_red" render="Label" position="190,525" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="red" />
 		<widget source="key_green" render="Label" position="460,525" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="green" />
 	</screen>
 	<screen name="MediaPlayerSettings" position="340,134" size="600,502" title="Edit settings">
 		<eLabel position="0,0" size="600,2" backgroundColor="grey" />
-		<widget name="config" position="10,10" size="580,480" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" />
+		<widget name="config" position="10,10" size="580,480" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" />
 		<eLabel position="0,518" size="900,2" backgroundColor="grey" />
 		<widget source="key_red" render="Label" position="190,525" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="red" />
 		<widget source="key_green" render="Label" position="460,525" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="green" />
@@ -1926,7 +1926,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="label" render="Label" position="20,20" size="260,160" font="Regular;20" transparent="1" />
 		<widget name="thn" position="20,200" size="260,300" alphatest="on" />
 		<eLabel position="300,0" size="2,518" backgroundColor="grey" />
-		<widget name="filelist" position="320,20" size="760,480" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" />
+		<widget name="filelist" position="320,20" size="760,480" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" />
 		<eLabel position="0,518" size="1100,2" backgroundColor="grey" />
 		<widget source="key_red" render="Label" position=" 20,525" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="red" />
 		<widget source="key_green" render="Label" position="290,525" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="green" />
@@ -1947,13 +1947,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	</screen>
 	<screen name="Pic_Setup" position="340,134" size="600,502" title="Settings">
 		<eLabel position="0,0" size="600,2" backgroundColor="grey" zPosition="5" />
-		<widget name="config" position="10,10" size="580,480" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" />
+		<widget name="config" position="10,10" size="580,480" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" />
 		<widget source="key_red" render="Label" position="20,525" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="red" />
 		<widget source="key_green" render="Label" position="290,525" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="green" />
 	</screen>
 	<screen name="WebIfConfigScreen" position="90,100" size="1100,560" title="Main Setup">
 		<eLabel position="0,0" size="1100,2" backgroundColor="grey" />
-		<widget name="config" position="10,20" size="1080,475" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" />
+		<widget name="config" position="10,20" size="1080,475" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" />
 		<eLabel position="0,518" size="1100,2" backgroundColor="grey" />
 		<widget source="key_red" render="Label" position="20,525" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="red" />
 		<widget source="key_green" render="Label" position="290,525" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="green" />
@@ -1961,7 +1961,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	</screen>
 	<screen name="WebIfInterfaceConfigScreen" position="90,100" size="1100,560" title="edit Interface">
 		<eLabel position="0,0" size="1100,2" backgroundColor="grey" />
-		<widget name="config" position="10,20" size="1080,475" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" />
+		<widget name="config" position="10,20" size="1080,475" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" />
 		<eLabel position="0,518" size="1100,2" backgroundColor="grey" />
 		<widget source="key_red" render="Label" position="20,525" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="red" />
 		<widget source="key_green" render="Label" position="290,525" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="green" />
@@ -1975,7 +1975,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="auth" render="Label" position="240,20" size="200,50" font="Regular;20" halign="left" transparent="1" />
 		<widget source="disabled" render="Label" position="410,20" size="180,50" font="Regular;20" halign="left" transparent="1" />
 		<eLabel position="10,70" size="1080,2" backgroundColor="grey" />
-		<widget name="ifacelist" position="10,80" size="1080,350" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" />
+		<widget name="ifacelist" position="10,80" size="1080,350" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" />
 		<eLabel position="0,518" size="1100,2" backgroundColor="grey" />
 		<widget source="key_red" render="Label" position="20,525" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="red" />
 		<widget source="key_green" render="Label" position="290,525" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="green" />
@@ -1983,13 +1983,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="key_blue" render="Label" position="830,525" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="blue" />
 	</screen>
 	<screen name="VlcMediaListScreen" position="90,100" size="1100,560" title="VlcMediaListScreen">
-		<widget name="filelist_button_sel" pixmap="AcjTeam-HD/epg_now.png" position="0,0" zPosition="3" size="1100,35" alphatest="on" />
-		<widget name="playlist_button_sel" pixmap="AcjTeam-HD/epg_next.png" position="0,0" zPosition="3" size="1100,35" alphatest="on" />
+		<widget name="filelist_button_sel" pixmap="skin_default/epg_now.png" position="0,0" zPosition="3" size="1100,35" alphatest="on" />
+		<widget name="playlist_button_sel" pixmap="skin_default/epg_next.png" position="0,0" zPosition="3" size="1100,35" alphatest="on" />
 		<widget name="filelist_text" position="32,7" zPosition="4" size="250,25" font="Regular;20" halign="center" backgroundColor="transpBlack" transparent="1" />
 		<widget name="playlist_text" position="282,7" zPosition="4" size="250,25" font="Regular;20" halign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="filelist" position="10,45" size="530,460" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" />
+		<widget name="filelist" position="10,45" size="530,460" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" />
 		<eLabel position="550,45" size="1,460" backgroundColor="grey" />
-		<widget name="playlist" position="560,45" size="530,460" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" />
+		<widget name="playlist" position="560,45" size="530,460" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" />
 		<eLabel position="0,518" size="1100,2" backgroundColor="grey" />
 		<widget name="key_red" position="20,525" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="red" />
 		<widget name="key_green" position="290,525" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="green" />
@@ -2000,7 +2000,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<eLabel position="0,0" size="1100,2" backgroundColor="grey" />
 		<widget name="serverlabel" position="10,10" size="1080,25" font="Regular;22" transparent="1" />
 		<eLabel position="10,43" size="1080,2" backgroundColor="grey" />
-		<widget name="serverlist" position="10,50" size="1080,437" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" />
+		<widget name="serverlist" position="10,50" size="1080,437" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" />
 		<eLabel position="0,518" size="1100,2" backgroundColor="grey" />
 		<widget name="key_red" position="20,525" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="red" />
 		<widget name="key_green" position="290,525" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="green" />
@@ -2009,7 +2009,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	</screen>
 	<screen name="VlcServerConfigScreen" position="90,100" size="1100,560" title="Edit VLC Server">
 		<eLabel position="0,0" size="1100,2" backgroundColor="grey" />
-		<widget name="config" position="10,10" size="1080,500" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" />
+		<widget name="config" position="10,10" size="1080,500" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" />
 		<eLabel position="0,518" size="1100,2" backgroundColor="grey" />
 		<widget name="key_red" position="20,525" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="red" />
 		<widget name="key_green" position="290,525" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="green" />
@@ -2018,13 +2018,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	</screen>
 	<screen name="FileBrowser" position="90,100" size="1100,560" title="DVD File Browser">
 		<eLabel position="0,0" size="1100,2" backgroundColor="grey" />
-		<widget name="filelist" position="10,10" size="1080,500" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" />
+		<widget name="filelist" position="10,10" size="1080,500" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" />
 		<widget source="key_red" render="Label" position="20,525" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="red" />
 		<widget source="key_green" render="Label" position="290,525" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="green" />
 	</screen>
 	<screen name="ProjectSettings" position="90,100" size="1100,560" title="Collection settings">
 		<eLabel position="0,0" size="1100,2" backgroundColor="grey" />
-		<widget name="config" position="10,10" size="1080,350" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" />
+		<widget name="config" position="10,10" size="1080,350" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" />
 		<widget source="info" render="Label" position="10,380" size="1080,100" font="Regular;20" />
 		<eLabel position="0,518" size="1100,2" backgroundColor="grey" />
 		<widget source="key_red" render="Label" position="20,525" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="red" />
@@ -2035,7 +2035,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	<screen name="DVDMovieSelection" position="90,100" size="1100,560" title="Select a movie">
 		<eLabel position="0,0" size="1100,2" backgroundColor="grey" />
 		<eLabel position="780,0" size="2,518" backgroundColor="grey" />
-		<widget name="list" position="10,20" size="760,450" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select780_75.png" />
+		<widget name="list" position="10,20" size="760,450" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select780_75.png" />
 		<widget name="freeDiskSpace" position="10,485" size="760,25" font="Regular;22" halign="center" />
 		<widget source="Service" render="Label" position="790,10" zPosition="1" size="300,50" font="Regular;24" halign="center" foregroundColor="white">
 			<convert type="MovieInfo">RecordServiceName</convert>
@@ -2071,7 +2071,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<eLabel position="0,0" size="1100,2" backgroundColor="grey" />
 		<widget source="title_label" render="Label" position="10,48" size="1080,45" font="Regular;22" />
 		<widget name="error_label" position="10,48" size="1080,395" zPosition="3" font="Regular;20" />
-		<widget source="titles" render="Listbox" position="10,100" size="1080,360" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png">
+		<widget source="titles" render="Listbox" position="10,100" size="1080,360" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png">
 			<convert type="StaticMultiList" />
 		</widget>
 		<widget source="space_bar_single" 	render="Progress" 	position="10,480" size=" 540,26" zPosition="2" borderWidth="1" backgroundColor="grey" />
@@ -2087,7 +2087,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	<screen name="TitleCutter" position="0,0" size="1280,720" title="Cutlist editor" flags="wfNoBorder" backgroundColor="#000000">
 		<eLabel position="80,125" size="300,420" zPosition="1" backgroundColor="grey"/>
 		<eLabel position="81,126" size="298,418" zPosition="2" backgroundColor="black"/>
-		<widget source="cutlist" position="90,135" zPosition="3" size="280,400" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" render="Listbox" >
+		<widget source="cutlist" position="90,135" zPosition="3" size="280,400" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" render="Listbox" >
 			<convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos=(10,2), size=(170, 20), text = 1, backcolor = MultiContentTemplateColor(3)),
@@ -2106,7 +2106,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="session.CurrentService" render="Label" position="450,550" size="790,25" zPosition="3" font="Regular;20" halign="center" valign="center" backgroundColor="black" transparent="1">
 			<convert type="ServicePosition">Position,Detailed</convert>
 		</widget>
-		<ePixmap pixmap="AcjTeam-HD/mp_buttons.png" position="100,582" size="260,32" zPosition="1" alphatest="on" />
+		<ePixmap pixmap="skin_default/mp_buttons.png" position="100,582" size="260,32" zPosition="1" alphatest="on" />
 		<widget name="Timeline" position="479,587" size="696,20" zPosition="3" backgroundColor="#808888" pointer="skin_default/position_arrow.png:3,5" foregroundColor="black" />
 		<eLabel text="OK = Menu" position="1060,630" size="140,22" zPosition="1" font="Regular;20" backgroundColor="black" transparent="1" />
 	</screen>
@@ -2115,7 +2115,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="thumbnail" position="20,20" size="260,160" alphatest="on" />
 		<widget source="serviceinfo" render="Label" position="320,20" size="740,160" font="Regular;21" backgroundColor="#252b4247" transparent="1" />
 		<eLabel position="0,200" size="1100,2" backgroundColor="grey" />
-		<widget name="config" position="20,210" size="1060,300" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" />
+		<widget name="config" position="20,210" size="1060,300" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" />
 		<eLabel position="0,518" size="1100,2" backgroundColor="grey" />
 		<widget source="key_red" render="Label" position="20,525" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="red" />
 		<widget source="key_green" render="Label" position="290,525" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="green" />
@@ -2150,15 +2150,15 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="session.CurrentService" render="Label" position="0,73" size="110,25" font="Regular;22" halign="right" valign="center" backgroundColor="transpBlack" transparent="1">
 			<convert type="ServicePosition">Position,ShowHours</convert>
 		</widget>
-		<ePixmap position="120,77" size="600,16" pixmap="AcjTeam-HD/mpslider.png" zPosition="3" alphatest="blend" />
-		<widget source="session.CurrentService" render="PositionGauge" position="140,78" size="560,14" zPosition="2" pointer="AcjTeam-HD/pointer.png:13,3">
+		<ePixmap position="120,77" size="600,16" pixmap="skin_default/mpslider.png" zPosition="3" alphatest="blend" />
+		<widget source="session.CurrentService" render="PositionGauge" position="140,78" size="560,14" zPosition="2" pointer="skin_default/pointer.png:13,3">
 			<convert type="ServicePosition">Gauge</convert>
 		</widget>
 		<widget name="chapterLabel" position="140,103" size="560,25" font="Regular;22" halign="center" foregroundColor="grey" backgroundColor="black" transparent="1" />
 		<widget source="session.CurrentService" render="Label" position="730,73" size="110,25" font="Regular;22" halign="left" valign="center" backgroundColor="transpBlack" transparent="1">
 			<convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
 		</widget>
-		<ePixmap position="845,80" zPosition="1" size="260,32" pixmap="AcjTeam-HD/mp_buttons.png" alphatest="on" />
+		<ePixmap position="845,80" zPosition="1" size="260,32" pixmap="skin_default/mp_buttons.png" alphatest="on" />
 	</screen>
 	<screen name="ChapterZap" position="500,600" size="280,60" title="Chapter">
 		<widget name="chapter" position="35,15" size="110,25" font="Regular;23" />
@@ -2169,7 +2169,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="info" render="Label" position="20,20" size="260,200" font="Regular;21" transparent="1" />
 		<widget source="info2" render="Label" position="20,240" size="260,260" font="Regular;21" transparent="1" />
 		<eLabel position="300,0" size="2,518" backgroundColor="grey" />
-		<widget name="config" position="320,20" size="760,475" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" />
+		<widget name="config" position="320,20" size="760,475" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" />
 		<eLabel position="0,518" size="1100,2" backgroundColor="grey" />
 		<widget source="key_red" render="Label" position=" 20,525" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="red" />
 		<widget source="key_green" render="Label" position="290,525" size="250,30" font="Regular;24" halign="center" valign="center" foregroundColor="green" />
@@ -2198,8 +2198,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="session.CurrentService" render="Label" position="60,73" size="100,25" font="Regular;22" halign="right" valign="center" backgroundColor="black" transparent="1">
 			<convert type="ServicePosition">Position</convert>
 		</widget>
-		<ePixmap position="170,77" size="600,16" pixmap="AcjTeam-HD/mpslider.png" zPosition="3" alphatest="blend" />
-		<widget source="session.CurrentService" render="PositionGauge" position="190,78" size="560,14" zPosition="2" pointer="AcjTeam-HD/pointer.png:13,3">
+		<ePixmap position="170,77" size="600,16" pixmap="skin_default/mpslider.png" zPosition="3" alphatest="blend" />
+		<widget source="session.CurrentService" render="PositionGauge" position="190,78" size="560,14" zPosition="2" pointer="skin_default/pointer.png:13,3">
 			<convert type="ServicePosition">Gauge</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="780,73" size="100,25" font="Regular;22" halign="left" valign="center" backgroundColor="black" transparent="1">
@@ -2214,7 +2214,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="config" 	position="10,10" size="1080,28" zPosition="3" scrollbarMode="showNever" transparent="1"/>
 		<eLabel position="0,46" size="1100,2" backgroundColor="grey" />
 
-		<widget source="feedlist" render="Listbox" position="10,55" size="1080,400" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_100.png" backgroundPixmap="AcjTeam-HD/menu/select1080_100_bg.png" transparent="1" >
+		<widget source="feedlist" render="Listbox" position="10,55" size="1080,400" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_100.png" backgroundPixmap="skin_default/menu/select1080_100_bg.png" transparent="1" >
 			<convert type="TemplatedMultiContent">
 			{"templates":
 				{"default": (100,[
@@ -2240,7 +2240,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<eLabel text="INFO" position="960,485" size="70,22" zPosition="1" font="Regular;20" backgroundColor="black" transparent="1" />
 		<eLabel text="MENU" position="1030,485" size="70,22" zPosition="1" font="Regular;20" backgroundColor="black" transparent="1" />
 		<eLabel position="0,518" size="1100,2" backgroundColor="grey" />
-		<widget name="ButtonBlue" position="830,526" zPosition="1" size="250,38" alphatest="blend" pixmap="AcjTeam-HD/vkey_icon_blue.png" />
+		<widget name="ButtonBlue" position="830,526" zPosition="1" size="250,38" alphatest="blend" pixmap="skin_default/vkey_icon_blue.png" />
 		<widget name="key_red" position="20,526" zPosition="2" size="250,38" font="Regular;24" halign="center" valign="center" foregroundColor="red" backgroundColor="darkgrey" transparent="1" />
 		<widget name="key_green" position="290,526" zPosition="2" size="250,38" font="Regular;24" halign="center" valign="center" foregroundColor="green" backgroundColor="darkgrey" transparent="1" />
 		<widget name="key_yellow" position="560,526" zPosition="2" size="250,38" font="Regular;24" halign="center" valign="center" foregroundColor="yellow" backgroundColor="darkgrey" transparent="1" />
@@ -2292,7 +2292,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	</screen>
 	<screen name="MyTubeSuggestionsListScreen" position="430,120" size="760,320" title="MyTubeSuggestionsListScreen..." zPosition="6" >
 		<eLabel position="0,0" size="760,2" backgroundColor="grey" />
-		<widget source="suggestionslist" render="Listbox" position="10,10" zPosition="7" size="740,300" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select780_30.png" transparent="1" >
+		<widget source="suggestionslist" render="Listbox" position="10,10" zPosition="7" size="740,300" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select780_30.png" transparent="1" >
 			<convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos = (10, 2), size = (420, 25), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
@@ -2306,7 +2306,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	</screen>
 	<screen name="MyTubeHistoryScreen" position="430,120" size="760,410" title="MyTubeHistoryScreen..." zPosition="6" >
 		<eLabel position="0,0" size="760,2" backgroundColor="grey" />
-		<widget source="historylist" render="Listbox" position="10,10" zPosition="7" size="740,390" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select780_30.png" transparent="1" >
+		<widget source="historylist" render="Listbox" position="10,10" zPosition="7" size="740,390" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select780_30.png" transparent="1" >
 			<convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos = (10, 2), size = (420, 25), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
@@ -2319,7 +2319,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	</screen>
 	<screen name="MyTubeSettingsScreen" position="300,90" size="680,570" title="MyTubeSettingsScreen">
 		<eLabel position="0,0" size="680,2" backgroundColor="grey" zPosition="5" />
-		<widget name="config" position="10,10" size="660,550" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" transparent="1" />
+		<widget name="config" position="10,10" size="660,550" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" transparent="1" />
 		<ePixmap position="570,473" size="100,40" zPosition="4" pixmap="~/plugin.png" alphatest="on" transparent="1" />
 		<eLabel position="0,518" size="680,2" backgroundColor="grey" />
 		<widget name="key_red" position="80,526" zPosition="2" size="250,38" font="Regular;24" halign="center" valign="center" foregroundColor="red" backgroundColor="darkgrey" transparent="1" />
@@ -2329,7 +2329,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	<screen name="MyTubeTasksScreen" position="300,90" size="680,570" title="MyTubeTasksScreen" >
 		<eLabel position="0,0" size="680,2" backgroundColor="grey" zPosition="5"/>
 		<widget name="title" position="80,60" size="800,32" font="Regular;27" halign="center" backgroundColor="#0b67a2" transparent="1"/>
-		<widget source="tasklist" render="Listbox" position="10,10" size="660,410" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" transparent="1" >
+		<widget source="tasklist" render="Listbox" position="10,10" size="660,410" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" transparent="1" >
 			<convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos = (10, 3), size = (230, 24), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the name
@@ -2350,7 +2350,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 
 	<screen name="AutoMountEdit" position="90,100" size="1100,560" title="MountEdit">
 		<eLabel position="0,0" size="1100,2" backgroundColor="grey" />
-		<widget name="config" position="20,20" zPosition="1" size="740,300" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" />
+		<widget name="config" position="20,20" zPosition="1" size="740,300" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" />
 		<eLabel position="780,0" size="2,518" backgroundColor="grey" />
 		<eLabel position="0,518" size="1100,2" backgroundColor="grey" />
 		<widget source="introduction" render="Label" position="20,525" size="400,30" zPosition="10" font="Regular;24" halign="center" />
@@ -2360,7 +2360,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	</screen>
 	<screen name="AutoMountManager" position="90,100" size="1100,560" title="MountManager">
 		<eLabel position="0,0" size="1100,2" backgroundColor="grey"/>
-		<widget source="config" render="Listbox" position="20,20" size="740,420" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_60.png" >
+		<widget source="config" render="Listbox" position="20,20" size="740,420" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_60.png" >
 			<convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos = (60, 5), size = (660, 28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 2 is the Menu Titel
@@ -2383,7 +2383,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="legend2" render="Label" position="200,8" zPosition="1" size="400,60" font="Regular;20" halign="center" valign="center" />
 		<widget source="legend3" render="Label" position="640,8" zPosition="1" size="120,60" font="Regular;20" halign="center" valign="center" />
 		<eLabel position="0,75" size="780,2" backgroundColor="grey"/>
-		<widget source="config" render="Listbox" position="10,90" size="750,420" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_60.png">
+		<widget source="config" render="Listbox" position="10,90" size="750,420" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_60.png">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryPixmapAlphaTest(pos = (40, 6), size = (48, 48), png = 0), # index 0 is the isMounted pixmap
@@ -2406,7 +2406,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	</screen>
 	<screen name="NetworkBrowser" position="90,100" size="1100,560" title="Network Neighbourhood">
 		<eLabel position="0,0" size="1100,2" backgroundColor="grey"/>
-		<widget source="list" render="Listbox" position="20,20" size="740,420" zPosition="10" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_60.png">
+		<widget source="list" render="Listbox" position="20,20" size="740,420" zPosition="10" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_60.png">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 1), # index 1 is the expandable/expanded/verticalline icon
@@ -2431,7 +2431,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	</screen>
 	<screen name="UserDialog" position="90,100" size="1100,560" title="UserDialog">
 		<eLabel position="0,0" size="1100,2" backgroundColor="grey" />
-		<widget name="config" position="20,20" zPosition="1" size="740,300" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_25.png" />
+		<widget name="config" position="20,20" zPosition="1" size="740,300" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_25.png" />
 		<eLabel position="780,0" size="2,518" backgroundColor="grey" />
 		<eLabel position="0,518" size="1100,2" backgroundColor="grey" />
 		<widget source="introduction" render="Label" position="20,525" size="400,30" zPosition="10" font="Regular;24" halign="center" />
@@ -2441,7 +2441,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	</screen>
 	<screen name="UserManager" position="90,100" size="1100,560" title="UserManager">
 		<eLabel position="0,0" size="1100,2" backgroundColor="grey"/>
-		<widget source="config" render="Listbox" position="10,20" size="750,420" scrollbarMode="showOnDemand" selectionPixmap="AcjTeam-HD/menu/select1080_60.png">
+		<widget source="config" render="Listbox" position="10,20" size="750,420" scrollbarMode="showOnDemand" selectionPixmap="skin_default/menu/select1080_60.png">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos = (80, 7), size = (650, 50), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
